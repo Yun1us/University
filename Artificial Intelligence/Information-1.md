@@ -11,5 +11,5 @@
 - Wenn man h, bei A*'Search auf 0 setzt bekommt man Uniform-Cost-Search
 https://www.educative.io/answers/what-are-informed-search-algorithms
 https://www.interviewbit.com/python-interview-questions/#freshers 
-
+https://github.com/jwasham/coding-interview-university
 - interview questions 
