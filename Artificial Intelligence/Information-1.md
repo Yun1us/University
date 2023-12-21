@@ -9,3 +9,4 @@
 - Unterschiede zwischen Algorithmen, Labs selber gemacht und verstanden und Beispiele in der Vorlesung verstehen
 - Vielleicht wird es statt 6 Leistungsnachweisen nur 5 geben, somit bräuchte man um zu bestehen nur noch 4/5 Leistungsnachweise
 - Wenn man h, bei A*'Search auf 0 setzt bekommt man Uniform-Cost-Search
+https://www.educative.io/answers/what-are-informed-search-algorithms
