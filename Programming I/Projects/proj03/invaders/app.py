@@ -87,12 +87,12 @@ class Invaders(GameApp):
         create a message (in attribute _text) saying that the user should press 
         to play a game.
         """
-        # IMPLEMENT ME
+    
         self._state = STATE_INACTIVE
         self._wave = None
 
         if self._state == STATE_INACTIVE:   
-            self._text = GLabel(text = "Press 'S' to play", font_size = 26, left=300, bottom=300)
+            self._text = GLabel(text = "Press 'E' to play", font_name='Arcade.ttf', font_size = 30, left=310, bottom=310)
         else:
             self._text = None
         
@@ -149,7 +149,15 @@ class Invaders(GameApp):
         Parameter dt: The time in seconds since last update
         Precondition: dt is a number (int or float)
         """
-        # IMPLEMENT ME
+    
+        if self.input.is_key_pressed("E"):
+            self._state = STATE_NEWWAVE
+            self._text = None
+
+        if self._state == STATE_NEWWAVE:
+            self._wave = Wave()
+            # print(" created Wave")
+            self._state = STATE_ACTIVE
         pass
     
     def draw(self):
@@ -166,8 +174,13 @@ class Invaders(GameApp):
         class Wave.  We suggest the latter.  See the example subcontroller.py 
         from class.
         """
-        # IMPLEMENT ME
+    
+        if self._text is not None:
+            self._text.draw(self.view)
+        if self._state == STATE_ACTIVE:
+            self._wave.draw(self.view)
         pass
+    
     
     
     # HELPER METHODS FOR THE STATES GO HERE

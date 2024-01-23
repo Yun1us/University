@@ -50,6 +50,7 @@ class Wave(object):
     everything else hidden.
     
     """
+    #Alien code hat nicht geklappt 
     # HIDDEN ATTRIBUTES:
     # Attribute _ship: the player ship to control 
     # Invariant: _ship is a Ship object or None
