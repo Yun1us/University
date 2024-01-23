@@ -88,6 +88,14 @@ class Invaders(GameApp):
         to play a game.
         """
         # IMPLEMENT ME
+        self._state = STATE_INACTIVE
+        self._wave = None
+
+        if self._state == STATE_INACTIVE:   
+            self._text = GLabel(text = "Press 'S' to play", font_size = 26, left=300, bottom=300)
+        else:
+            self._text = None
+        
         pass
     
     def update(self,dt):
