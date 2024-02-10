@@ -1,6 +1,6 @@
-public class Brotcrunsher {
-    public static void main(String args[]){
-        System.out.println("Hello World");
-
+public class Printer {
+    public static void main(String[] args){
+        int myInt = 8;
+        System.out.println(myInt);
     }
 }
