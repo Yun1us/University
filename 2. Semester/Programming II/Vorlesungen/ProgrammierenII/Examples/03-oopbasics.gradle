@@ -1,0 +1,155 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '03-oopbasics'
+
+// References.java
+task(runReferencesExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.References.referencesExample();
+  }
+}
+
+task(runGcExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.References.gcExample();
+  }
+}
+
+task(runReferenceEqualityExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.References.referenceEqualityExample();
+  }
+}
+
+// Constructors.java
+task(runNumberPrinterExample1, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.Constructors.numberPrinterExample1();
+  }
+}
+
+task(runNumberPrinterExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.Constructors.numberPrinterExample2();
+  }
+}
+
+// SimpleRectangleUsage
+task(runNegativeWidthExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.shapes.SimpleRectangleExamples.negativeWidthExample();
+  }
+}
+
+task(runNullCenterExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.shapes.SimpleRectangleExamples.nullCenterExample();
+  }
+}
+
+// ImmutableStringExamples
+task(runImmutableStringExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.ImmutableStringExamples.immutableStringExample();
+  }
+}
+
+task(runImmutableStringExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.ImmutableStringExamples.immutableStringExample2();
+  }
+}
+
+// ConfigurableGreeterExample
+task(runConfigurableGreeterExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.ConfigurableGreeterExample.configurableGreeterExample();
+  }
+}
+
+// ProductExample
+task(runProductExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.ProductExample.productExample();
+  }
+}
+
+// SingletonGreeterExample
+task(runSingletonGreeterExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.SingletonGreeterExample.singletonGreeterExample()
+  }
+}
+
+// WeekdayExamples
+task(runWeekdayExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    for (day in de.hawlandshut.java1.oopbasics.Weekday.values()){
+      de.hawlandshut.java1.oopbasics.WeekdayExamples.weekdayExample(day)
+    }
+  }
+}
+
+task(runEnumSwitchCaseExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    for (day in de.hawlandshut.java1.oopbasics.Weekday.values()){
+      de.hawlandshut.java1.oopbasics.WeekdayExamples.enumSwitchCaseExample(day)
+    }
+  }
+}
+
+task(runEnumValuesExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.WeekdayExamples.enumValuesExample()
+  }
+}
+
+task(runEnumOrdinalExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.WeekdayExamples.enumOrdinalExample()
+  }
+}
+
+// IdentityExamples
+task(runBadIdentityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.IdentityExamples.badIdentityExample();
+  }
+}
+
+task(runFixedIdentityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.IdentityExamples.fixedIdentityExample();
+  }
+}
+
+task(runRectangleEqualsTest, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oopbasics.IdentityExamples.rectangleEqualsTest();
+  }
+}

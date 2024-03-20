@@ -1,0 +1,16 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '01-introdcution'
+
+// INTRODUCTION
+task(runHelloWorld, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  mainClass ='HelloWorld'
+  classpath = sourceSets.main.runtimeClasspath
+}

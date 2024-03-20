@@ -1,6 +1,9 @@
 public class Printer {
     public static void main(String[] args){
-        int myInt = 8;
-        System.out.println(myInt);
+        methodOne();
     }
-}
+    public static void methodOne(String[] args){
+        int x = 10;
+        int b = 20;
+    }
+}   

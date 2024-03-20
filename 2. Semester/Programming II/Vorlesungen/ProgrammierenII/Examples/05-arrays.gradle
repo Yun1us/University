@@ -1,0 +1,177 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '05-arrays'
+
+// OneDimArrayExamples
+task(runRandomArrayLengthExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.randomArrayLengthExample()
+  }
+}
+
+task(runCreateIntArray, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.createIntArray(5);
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.createIntArray(1);
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.createIntArray(0);
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.createIntArray(-3);
+  }
+}
+
+task(runArrayMultiplesExamples, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    println(de.hawlandshut.java1.arrays.OneDimArrayExamples.arrayMultiplesExample(1));
+    println(de.hawlandshut.java1.arrays.OneDimArrayExamples.arrayMultiplesExample(3));
+    println(de.hawlandshut.java1.arrays.OneDimArrayExamples.arrayMultiplesExample(-4));
+  }
+}
+
+task(runArrayReferencesExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.OneDimArrayExamples.arrayReferencesExample()
+  }
+}
+
+// ArrayIterateExamples
+task(runArraySumExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayIterateExamples.arraySumExample();
+  }
+}
+
+task(runArraySortExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayIterateExamples.arraySortExample();
+  }
+}
+
+task(runArraySumForEachExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayIterateExamples.arraySumForEachExample();
+  }
+}
+
+// RectangularArrayExamples
+task(runIdentityMatrixExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.RectangularArrayExamples.identityMatrixExample();
+  }
+}
+
+task(runThreeDimArrayExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.RectangularArrayExamples.threeDimArrayExample();
+  }
+}
+
+task(runIdentityMatrixLiteralExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.RectangularArrayExamples.identityMatrixLiteralExample();
+  }
+}
+
+// ArrayCopyExamples
+task(runArrayAssignmentExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayAssignmentExample()
+  }
+}
+
+task(runArrayCopyManualExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayCopyManualExample()
+  }
+}
+
+task(runArrayCopyCloneExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayCopyCloneExample()
+  }
+}
+
+task(runArrayFlatCopyExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayFlatCopyExample()
+  }
+}
+
+task(runArrayDeepCopyManualExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayDeepCopyManualExample()
+  }
+}
+
+task(runArrayDeepCopyCloneExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayCopyExamples.arrayDeepCopyCloneExample()
+  }
+}
+
+// ArrayEqualsExamples
+task(runArrayIdentityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayIdentityExample()
+  }
+}
+
+task(runArrayEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayEqualsExample()
+  }
+}
+
+task(runArrayEqualsIntByFoot, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    println(de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayEqualsIntByFoot([1,2,3].toArray() as int[], [1,2,3].toArray() as int[]))
+    println(de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayEqualsIntByFoot([1,2,3,4].toArray() as int[], [1,2,3].toArray() as int[]))
+    println(de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayEqualsIntByFoot([].toArray() as int[], [1,2,3].toArray() as int[]))
+    println(de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayEqualsIntByFoot([1,2,3].toArray() as int[], [1,2,4].toArray() as int[]))
+  }
+}
+
+task(runArrayArraysEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayArraysEqualsExample()
+  }
+}
+
+task(runArrayTwoDimensionalEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayTwoDimensionalEqualsExample()
+  }
+}
+
+task(runArrayTwoDimensionalDeepEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.arrays.ArrayEqualsExamples.arrayTwoDimensionalDeepEqualsExample()
+  }
+}
+

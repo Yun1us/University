@@ -1,0 +1,21 @@
+plugins {
+  id "java"
+  id "application"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+// import chapter gradle files
+apply from: '01-introduction.gradle'
+apply from: '02-basics.gradle'
+apply from: '03-oopbasics.gradle'
+apply from: '04-strings.gradle'
+apply from: '05-arrays.gradle'
+apply from: '06-oop.gradle'
+apply from: '07-exceptions.gradle'
+apply from: '08-collections.gradle'
+apply from: '09-io.gradle'

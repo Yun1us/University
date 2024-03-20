@@ -1,0 +1,98 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '07-exceptions'
+import de.hawlandshut.java1.exceptions.*;
+
+// ExceptionHandlingExamples.java
+task(runNoExceptionHandlingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.noExceptionHandlingExample()
+  }
+}
+
+task(runSomeExceptionHandlingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.someExceptionHandlingExample()
+  }
+}
+
+task(runSomeExceptionHandlingExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.someExceptionHandlingExample2()
+  }
+}
+
+task(runMoreExceptionHandlingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.moreExceptionHandlingExample()
+  }
+}
+
+task(runFinallyExceptionHandlingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.finallyExceptionHandlingExample()
+  }
+}
+
+task(runProvokeUnhandledException, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ExceptionHandlingExamples.provokeUnhandledException()
+  }
+}
+
+// ThrowableExamples.java
+task(runPrintThrowableInfoExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ThrowableExamples.printThrowableInfoExample();
+  }
+}
+
+// ThrowExamples.java
+task(runThrowExceptionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ThrowExamples.throwExceptionExample();
+  }
+}
+
+task(runNestExceptionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ThrowExamples.nestExceptionExample();
+  }
+}
+
+task(runRethrowExceptionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ThrowExamples.rethrowExceptionExample();
+  }
+}
+
+// CustomExceptionExamples.java
+task(runCustomExceptionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    CustomExceptionExamples.customExceptionExample();
+  }
+}
+
+task(runCustomExceptionExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    CustomExceptionExamples.customExceptionExample2();
+  }
+}

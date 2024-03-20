@@ -1,0 +1,595 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+def chapter = '02-basics'
+
+task(runHelloWorldAdvanced, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  mainClass ='de.hawlandshut.java1.basics.HelloWorldAdvanced'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runOverloadingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrintDemos.overloadingExample()
+  }
+}
+
+task(runVarargsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrintDemos.varargsExample()
+  }
+}
+
+task(runExpressionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Expressions.expressionExample();
+  }
+}
+
+task(runBooleanExpressionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Expressions.booleanExpressionExample();
+  }
+}
+
+task(runExpressionEvaluationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Expressions.expressionEvaluationExample();
+  }
+}
+
+task(runBlocksExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Blocks.blocksExample();
+  }
+}
+
+task(runPrintExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.ConsoleIO.printExample();
+  }
+
+}
+
+task(runPrintConcatExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.ConsoleIO.printConcatExample();
+  }
+
+}
+
+task(runPrintBadConcatExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.ConsoleIO.printBadConcatExample();
+  }
+
+}
+
+task(runPrintfExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.ConsoleIO.printfExample();
+  }
+
+}
+
+task(runSimpleScannerExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.ConsoleIO.simpleScannerExample();
+  }
+}
+
+task(runUnicodeExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.unicodeExample();
+  }
+}
+
+task(runIntegerNumberLiteralsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.integerNumberLiteralsExample();
+  }
+}
+
+task(runPrintTypeRanges, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.printTypeRanges();
+  }
+}
+
+task(runWideningConversionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.wideningConversionExample();
+  }
+}
+
+task(runNarrowingConversionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.narrowingConversionExample();
+  }
+}
+
+task(runOverflowExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.overflowExample();
+  }
+}
+
+task(runOverflowExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.PrimitiveTypes.overflowExample2();
+  }
+}
+
+task(runDivisionByZero, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.divisionByZero();
+  }
+}
+
+task(runFloatPrecisionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.floatPrecisionExample();
+  }
+}
+
+task(runFloatModuloExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.floatModuloExample();
+  }
+}
+
+task(runFloatManualModuloExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.floatManualModuloExample();
+  }
+}
+
+task(runIncrementDecrementExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.incrementDecrementExample();
+  }
+}
+
+task(runIntEqualityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.intEqualityExample();
+  }
+}
+
+task(runReferenceEqualityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.referenceEqualityExample();
+  }
+}
+
+task(runFloatEqualityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.floatEqualityExample();
+  }
+}
+
+task(runFloatInequalityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.floatInequalityExample();
+  }
+}
+
+task(runBitmaskExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.bitmaskExample();
+  }
+}
+
+task(runBitMultiplicationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.bitMultiplicationExample();
+  }
+}
+
+task(runIntAssignmentOperationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.intAssignmentOperationExample();
+  }
+}
+
+task(runAssignmentOperationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.assignmentOperationExample();
+  }
+}
+
+task(runLogicOperatorsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.logicOperatorsExample();
+  }
+}
+
+task(runNonBypassLogicOperatorsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.nonBypassLogicOperatorsExample();
+  }
+}
+
+task(runConcatenationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.concatenationExample();
+  }
+}
+
+task(runInstanceOfExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.instanceOfExample("Hello World");
+    de.hawlandshut.java1.basics.Operators.instanceOfExample((Double)3.1415d);
+  }
+}
+
+task(runConditionalOperatorExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Operators.conditionalOperatorExample();
+  }
+}
+
+// IfThenElse.java
+task(runBadIfExample1, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.badIfExample1();
+  }
+}
+
+task(runImprovedIfExample1, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.improvedIfExample1();
+  }
+}
+
+task(runBadIfExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.badIfExample2();
+  }
+}
+
+task(runImprovedIfExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.improvedIfExample2();
+  }
+}
+
+task(runBadIfExample3, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.badIfExample3();
+  }
+}
+
+task(runImprovedIfExample3, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.IfThenElse.improvedIfExample3();
+  }
+}
+
+// SwitchCase.java
+task(runSwitchCaseExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseExample(25);
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseExample(31);
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseExample(32);
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseExample(48);
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseExample(99);
+  }
+}
+
+task(runPrintMonthDaysIf, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    print "Januar, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysIf(Calendar.JANUARY, false);
+    print "September, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysIf(Calendar.SEPTEMBER, false);
+    print "Februar, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysIf(Calendar.FEBRUARY, false);
+    print "Februar, Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysIf(Calendar.FEBRUARY, true);
+    // https://simpsonswiki.com/wiki/Smarch
+    print "Smarch (12), kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysIf(12, true);
+  }
+}
+
+task(runPrintMonthDaysSwitch, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    print "Januar, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysSwitch(Calendar.JANUARY, false);
+    print "September, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysSwitch(Calendar.SEPTEMBER, false);
+    print "Februar, kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysSwitch(Calendar.FEBRUARY, false);
+    print "Februar, Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysSwitch(Calendar.FEBRUARY, true);
+    // https://simpsonswiki.com/wiki/Smarch
+    print "Smarch (12), kein Schaltjahr: "
+    de.hawlandshut.java1.basics.SwitchCase.printMonthDaysSwitch(12, true);
+  }
+}
+
+task(runSwitchCaseStringExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.SwitchCase.switchCaseStringExample();
+  }
+}
+
+task(runFindContainingString, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    def strings = [
+      "Nope",
+      "Hier gibt es nichts zu sehen",
+      "Wald",
+      "Sorry, the princess is in another castle.",
+      "There is Waldo!",
+      "And there is another Waldo",
+      "Zu spät"
+    ]
+    def waldo = "Waldo";
+    de.hawlandshut.java1.basics.While.findContainingString(strings.iterator(), waldo);
+  }
+}
+
+task(runDoWhileExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.While.doWhileExample();
+  }
+}
+
+// For.java
+task(runForInfiniteLoopExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.forInfiniteLoopExample();
+  }
+}
+
+task(runForMultiplicationTable, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.forMultiplicationTable();
+  }
+}
+
+task(runForExpressionStatementsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.forExpressionStatementsExample();
+  }
+}
+
+task(runIteratorExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.iteratorExample();
+  }
+}
+
+task(runForEachExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.forEachExample();
+  }
+}
+
+task(runForEachArrayExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.For.forEachArrayExample();
+  }
+}
+
+// Loops.java
+task(runNestedLoopsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.nestedLoopsExample();
+  }
+}
+
+task(runBubbleSort, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    int[] numbers = [5,1,3,4,2,6,7,9,8]
+    println "Eingabe: " + numbers
+    de.hawlandshut.java1.basics.Loops.bubbleSort(numbers);
+    println "Ergebnis: " + numbers
+  }
+}
+
+task(runSquareMatrix, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.squareMatrix();
+  }
+}
+
+task(runImprovedSquareMatrix, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.improvedSquareMatrix();
+  }
+}
+
+task(runBadLoopExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.badLoopExample();
+  }
+}
+
+task(runImprovedLoopExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.improvedLoopExample();
+  }
+}
+
+task(runSimpleBreakExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.simpleBreakExample();
+  }
+}
+
+task(runBreakLoopExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.breakLoopExample();
+  }
+}
+
+task(runBreakLoopWithLabelExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Loops.breakLoopWithLabelExample();
+  }
+}
+
+// Methods.java
+task(runVarargsExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.varargsExample2();
+  }
+}
+
+task(runVarargsIntrospectionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.varargsIntrospectionExample();
+  }
+}
+
+task(runSimpleOverloadExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.simpleOverloadExample();
+  }
+}
+
+task(runOverloadingExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.overloadingExample2();
+  }
+}
+
+task(runCallByValueExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.callByValueExample();
+  }
+}
+
+task(runCallByValueExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.callByValueExample2();
+  }
+}
+
+task(runDefaultParameterExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Methods.defaultParameterExample();
+  }
+}
+
+// MethodCalls.java
+task(runMethodCallExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.MethodCalls.methodCallExample();
+  }
+}
+
+task(runParameterEvaluationExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.MethodCalls.parameterEvaluationExample();
+  }
+}
+
+task(runMethodCallChain, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.MethodCalls.methodCallChain();
+  }
+}
+
+// Recursion.java
+task(runFibonacciExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Recursion.fibonacciExample();
+  }
+}
+
+task(runStackOverflowExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.basics.Recursion.stackOverflowExample();
+  }
+}
+
+// TicTacToe.java
+task(runTicTacToe, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  standardInput = System.in
+  mainClass ='de.hawlandshut.java1.basics.TicTacToe'
+  classpath = sourceSets.main.runtimeClasspath
+}

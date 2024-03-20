@@ -1,0 +1,401 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '08-collections'
+import de.hawlandshut.java1.collections.*;
+
+// WrapperExamples.java
+task(runIntegerWrapperExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    WrapperExamples.integerWrapperExample();
+  }
+}
+
+task(runPrimitivesAsObjectExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    WrapperExamples.primitivesAsObjectExample();
+  }
+}
+
+task(runWrapperValidIdentityExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      WrapperExamples.wrapperValidIdentityExample();
+    }
+}
+
+task(runWrapperNoIdentityExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      WrapperExamples.wrapperNoIdentityExample();
+    }
+}
+
+task(runWrapperEqualsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      WrapperExamples.wrapperEqualsExample();
+    }
+}
+
+// AutoboxingExamples.java
+task(runAutoboxingExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      AutoboxingExamples.autoboxingExample();
+    }
+}
+
+task(runAutounboxingExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      AutoboxingExamples.autounboxingExample();
+    }
+}
+
+task(runAutoboxingRefTypeExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      AutoboxingExamples.autoboxingRefTypeExample();
+    }
+}
+
+task(runAutoboxingArrayExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      AutoboxingExamples.autoboxingArrayExample();
+    }
+}
+
+// ArrayListExamples.java
+task(runArrayCheckoutExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ArrayListExamples.arrayCheckoutExample();
+  }
+}
+
+task(runArrayListCheckoutExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ArrayListExamples.arrayListCheckoutExample();
+  }
+}
+  
+task(runArrayListIterateForExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ArrayListExamples.arrayListIterateForExample();
+  }
+}
+
+task(runArrayListIterateForEachExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ArrayListExamples.arrayListIterateForEachExample();
+  }
+}
+
+// GenericsExamples.java
+task(runNonGenericExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      GenericsExamples.nonGenericExample();
+    }
+}
+
+task(runGenericsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      GenericsExamples.genericsExample();
+    }
+}
+
+// LinkedListExamples.java
+task(runLinkedListExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    LinkedListExamples.linkedListExample();
+  }
+}
+
+// SetExamples.java
+task(runSetOperationsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SetExamples.setOperationsExample();
+    }
+}
+
+task(runEnumSetExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SetExamples.enumSetExample();
+    }
+}
+
+// MapExamples.java
+task(runMapOperationsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      MapExamples.mapOperationsExample();
+    }
+}
+
+// FactoriesExamples.java
+task(runListCreationNoFactory, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    FactoriesExamples.listCreationNoFactory();
+  }
+}
+
+task(runListCreationArray, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    FactoriesExamples.listCreationArray();
+  }
+}
+
+task(runListCreationFactory, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.listCreationFactory();
+    }
+}
+
+task(runSetCreationFactory, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.setCreationFactory();
+    }
+}
+
+task(runSetCreationDuplicates, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.setCreationDuplicates();
+    }
+}
+
+task(runMapCreationFactory, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.mapCreationFactory();
+    }
+}
+
+task(runMapCreationEntryFactory, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.mapCreationEntryFactory();
+    }
+}
+
+task(runListFactoryModify, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.listFactoryModify();
+    }
+}
+
+task(runListFactoryModifiable, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      FactoriesExamples.listFactoryModifiable();
+    }
+}
+
+// UnmodifiableExample.java
+task(runModifiableMapExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    UnmodifiableExample.modifiableMapExample();
+  }
+}
+
+task(runUnmodifieableMapExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    UnmodifiableExample.unmodifieableMapExample();
+  }
+}
+
+// NestedCollections.java
+task(runNestedCollectionsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      NestedCollections.nestedCollectionsExample();
+    }
+}
+
+// IteratorExamples.java
+task(runIteratorManualExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.iteratorManualExample();
+    }
+}
+
+task(runIteratorForEachExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.iteratorForEachExample();
+    }
+}
+
+task(runIteratorParallelExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    IteratorExamples.iteratorParallelExample();
+  }
+}
+
+task(runIteratorChangeStructureExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.iteratorChangeStructureExample();
+    }
+}
+
+task(runIteratorChangeContentExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    IteratorExamples.iteratorChangeContentExample();
+  }
+}
+
+task(runIteratorRemoveExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.iteratorRemoveExample();
+    }
+}
+
+task(runIteratorRemoveConcurrentExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.iteratorRemoveConcurrentExample();
+    }
+}
+
+task(runListIteratorLeftRightExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      IteratorExamples.listIteratorLeftRightExample();
+    }
+}
+
+// OwnIteratorExamples.java
+task(runStockIteratorExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      OwnIteratorExamples.stockIteratorExample();
+    }
+}
+  
+task(runIterableStringExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      OwnIteratorExamples.iterableStringExample();
+    }
+}
+
+task(runRangeIteratorExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      OwnIteratorExamples.rangeIteratorExample();
+    }
+}
+
+// ComparingExamples.java
+task(runSortNumbersExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.sortNumbersExample();
+    }
+}
+
+task(runSortItemsExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.sortItemsExample();
+    }
+}
+
+task(runCompareToItemExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.compareToItemExample();
+    }
+}
+
+task(runComparatorItemExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.comparatorItemExample();
+    }
+}
+
+task(runSortItemsComparatorExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.sortItemsComparatorExample();
+    }
+}
+
+task(runCollatorCompareExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.collatorCompareExample();
+    }
+}
+
+task(runSortItemsComparatorExample2, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.sortItemsComparatorExample2();
+    }
+}
+
+task(runSortItemsComparatorExample3, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.sortItemsComparatorExample3();
+    }
+}
+
+task(runTreeSetComparableExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.treeSetComparableExample();
+    }
+}
+
+task(runTreeSetComparatorExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.treeSetComparatorExample();
+    }
+}
+
+task(runTreeSetInconsistentComparatorExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.treeSetInconsistentComparatorExample();
+    }
+}
+
+task(runTreeMapComparableExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ComparingExamples.treeMapComparableExample();
+    }
+}
