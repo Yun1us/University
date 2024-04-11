@@ -10,13 +10,13 @@ public class Volumenberechner {
             
             case 1:
             double radius = Double.parseDouble(args[0]);
-            double volumen = (4 / 3) * Math.PI * Math.pow(radius, 3);
+            double volumen = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
             System.out.println("Kugelvolumen beträgt: " + volumen);
 
             case 2: 
             double Grundseite = Double.parseDouble(args[0]);
             double Höhe = Double.parseDouble(args[1]);
-            double volumen2 = (1 / 3) * Math.pow(Grundseite , 2) * Höhe;
+            double volumen2 = (1.0 / 3.0) * Math.pow(Grundseite , 2) * Höhe;
             System.out.println("Pyramidenvolumen beträgt: " + volumen2);
 
             case 3:
