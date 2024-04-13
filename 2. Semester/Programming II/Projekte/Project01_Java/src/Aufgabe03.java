@@ -12,20 +12,21 @@ public class Aufgabe03 {
         for(int i = 0; i < numoftask; i++){
             int random1 = random.nextInt(10);
             int random2 = random.nextInt(10);
-         
-        System.out.printf("Was ist %d * %d\n", random1, random2);
-        int userloesung = scan.nextInt();
-         
-        int correctnum = random1 * random2;
-        if(correctnum == userloesung){
-            anzahlrichtig += 1;
-            System.out.println("Richtig!!!!");
-        }else{
-            System.out.println("Wrong Answer :(");
-        }
-        System.out.printf("Du hast %d von %d Aufgaben!", anzahlrichtig, numoftask);
 
-        
+            System.out.printf("Was ist %d * %d\n", random1, random2);
+            int userloesung = scan.nextInt();
+
+            int correctnum = random1 * random2;
+            if(correctnum == userloesung){
+                anzahlrichtig += 1;
+                System.out.println("Richtig!!!!");
+            }else{
+                System.out.println("Falsch :(");
+            }
+            System.out.printf("%d von %d Aufgaben korrekt" , anzahlrichtig, numoftask);
+            System.out.println(anzahlrichtig / numoftask * 10 + "%");
+
+
         }
     }
 }
