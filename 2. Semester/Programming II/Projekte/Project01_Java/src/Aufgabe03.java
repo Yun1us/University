@@ -23,8 +23,9 @@ public class Aufgabe03 {
             }else{
                 System.out.println("Falsch :(");
             }
-            System.out.printf("%d von %d Aufgaben korrekt" , anzahlrichtig, numoftask);
-            System.out.println(anzahlrichtig / numoftask * 10 + "%");
+            System.out.printf("%d von %d Aufgaben korrekt\n" , anzahlrichtig, numoftask);
+            int prozent = (anzahlrichtig * 100)/numoftask;
+            System.out.println("in Prozent: "+ prozent + "%");
 
 
         }
