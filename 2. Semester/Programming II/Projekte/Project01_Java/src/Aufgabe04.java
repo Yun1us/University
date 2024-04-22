@@ -56,6 +56,6 @@ public class Aufgabe04 {
                 break;
             }
         }
-        System.out.printf("Die Schätzung beträgt: %.5f%n", approxInt);
+        System.out.printf("Die Schätzung beträgt: %.5f%n (%f)", approxInt, allPoints);
     }
 }
