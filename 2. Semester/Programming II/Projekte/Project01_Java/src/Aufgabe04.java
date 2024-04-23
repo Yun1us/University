@@ -10,7 +10,7 @@ public class Aufgabe04 {
         double pointsUnderCurve = 0;
         double approxInt = 0;
         double allPoints = 0;
-        double lastapproxdouble = -1; // wird auf -1 gesetzt um bei der ersten berechnung von diff  einen gültigen vergleichswert zu haben
+        double lastapproxdouble = 0;
         double diff = 0;
 
         for (int i = 0; i < MAX_ITERATIONS; i++) { // Schleife in der  2 randoms erstellt werden und all points um 1 pro durchlauf erhöht wird 
