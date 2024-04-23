@@ -2,7 +2,7 @@ public class Aufgabe02 {
     public static void main(String[] args){
         switch(args.length){ // switch case mit args lenght als expression 
             case 0: // case 0 wenn keine Argumente eingegeben werden 
-                System.out.println("Verfügbare Berechnungen: Kugel, Pyramide, Quader");
+                System.out.println("Verfügbare Berechnungen: Kugel - Radius, Pyramide - Grundseite, Höhe, Quader - Länge, Breite, Höhe");
                 break;
 
             case 1: // case 1 wenn 1 Argument als Parameter eingegeben wird

@@ -10,7 +10,7 @@ public class Aufgabe04 {
         double pointsUnderCurve = 0;
         double approxInt = 0;
         double allPoints = 0;
-        double lastapproxdouble = 0;
+        double lastapproxdouble;
         double diff = 0;
 
         for (int i = 0; i < MAX_ITERATIONS; i++) { // Schleife in der  2 randoms erstellt werden und all points um 1 pro durchlauf erhöht wird 
@@ -28,10 +28,12 @@ public class Aufgabe04 {
 
             diff = Math.abs(approxInt - lastapproxdouble); // eine differenz wird gebildet um später die änderung zu prüfen  
 
-            /* if(i > 0 && diff < MIN_CHANGE){ // hier checkt man ab ob i > 0 ist um sicherzustellen dass die schleife mindestens einmal durchgegenagne ist
+             if(i > 10 && diff < MIN_CHANGE){ // hier checkt man ab ob i > 0 ist um sicherzustellen dass die schleife mindestens einmal durchgegenagne ist
                 break; // hier wird die Schleife unterbrochen 
-            } */
+            
+            
+            } 
+            System.out.printf("Iteration "+ (int)allPoints + ": %.5f (%f)\n", approxInt, diff); //formatierung von variablen die dann ausgegeben werden 
         }
-        System.out.printf("Die Schätzung beträgt: %.5f (%f)", approxInt, allPoints); //formatierung von variablen die dann ausgegeben werden 
     }
 }
