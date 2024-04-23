@@ -32,6 +32,6 @@ public class Aufgabe04 {
                 break; // hier wird die Schleife unterbrochen 
             } */
         }
-        System.out.printf("Die Schätzung beträgt: %.5f%n (%f)", approxInt, allPoints); //formatierung von variablen die dann ausgegeben werden 
+        System.out.printf("Die Schätzung beträgt: %.5f (%f)", approxInt, allPoints); //formatierung von variablen die dann ausgegeben werden 
     }
 }
