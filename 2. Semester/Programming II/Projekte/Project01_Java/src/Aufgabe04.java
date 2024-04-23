@@ -28,9 +28,9 @@ public class Aufgabe04 {
 
             diff = Math.abs(approxInt - lastapproxdouble); // eine differenz wird gebildet um später die änderung zu prüfen  
 
-            if(i > 0 && diff < MIN_CHANGE){ // hier checkt man ab ob i > 0 ist um sicherzustellen dass die schleife mindestens einmal durchgegenagne ist
-                break; // wenn nicht, dann wird hier die Schleife unterbrochen 
-            }
+            /* if(i > 0 && diff < MIN_CHANGE){ // hier checkt man ab ob i > 0 ist um sicherzustellen dass die schleife mindestens einmal durchgegenagne ist
+                break; // hier wird die Schleife unterbrochen 
+            } */
         }
         System.out.printf("Die Schätzung beträgt: %.5f%n (%f)", approxInt, allPoints); //formatierung von variablen die dann ausgegeben werden 
     }
