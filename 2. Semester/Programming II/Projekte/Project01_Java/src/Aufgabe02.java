@@ -28,6 +28,7 @@ public class Aufgabe02 {
 
             default:
                 System.out.println("Ungültige Anzahl von Parametern!"); // ist der Fall wenn mehr als 3 Parameter eingegeben werden
+                break;
         }
     }
 }
