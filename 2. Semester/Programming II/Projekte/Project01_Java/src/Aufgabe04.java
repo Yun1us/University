@@ -1,6 +1,6 @@
 public class Aufgabe04 {
     public static final int MAX_ITERATIONS = 100_000; //Hier sind die 2 Konstanten aufgelistet die in der Aufgabe gelistet sind. 
-    public static final double MIN_CHANGE = 1e-5;
+    public static final double MIN_CHANGE = Math.pow(10, -5); // Stellt 10 hoch -5 dar 
     
     public static double Funktionswert(double x) { //Funktionswert methode 
         return Math.sin(Math.PI * x); // berechnet den wert der sinusfunktion für das gegebene x  und skaliert den einheitsintervall [0,1] auf [0,PI]

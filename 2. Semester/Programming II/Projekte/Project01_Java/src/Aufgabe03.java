@@ -10,8 +10,8 @@ public class Aufgabe03 {
         int anzahlrichtig = 0;  // Counter der die Anzahl der richtigen Aufgaben zählt
 
         for(int i = 0; i < anzahlaufgaben; i++){
-            int random1 = random.nextInt(10); // neue random int von 0-9 wird erstellt 
-            int random2 = random.nextInt(10); // neue random int von 0-9 wird erstellt 
+            int random1 = random.nextInt(10) + 1; // neue random int von 0-9 wird erstellt 
+            int random2 = random.nextInt(10) + 1; // neue random int von 0-9 wird erstellt 
 
             System.out.printf("Was ist %d * %d\n", random1, random2); // %d sind Platzhalter für random1 und random2 in reihenfolge 
             int userloesung = scanner.nextInt(); // Die Lösung die der User eingibt 
