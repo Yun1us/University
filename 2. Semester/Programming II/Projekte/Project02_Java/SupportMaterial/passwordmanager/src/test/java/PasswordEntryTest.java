@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 
 public class PasswordEntryTest{
 
-  @Test
+ @Test
   public void testConstructor(){
 
     PasswordEntry entry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
@@ -43,7 +43,7 @@ public class PasswordEntryTest{
         IllegalArgumentException.class, () -> new PasswordEntry("reddit.com", null));
   }
 
-   @Test
+  @Test
   public void testCopyConstructor(){
     PasswordEntry entry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
     PasswordEntry anotherEntry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
@@ -59,9 +59,9 @@ public class PasswordEntryTest{
         IllegalArgumentException.class,
         () -> new PasswordEntry(null));
 
-  }}
+  }
 
-  /*@Test
+  @Test
   public void testRegeneratePassword(){
     PasswordEntry entry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
 
@@ -72,7 +72,7 @@ public class PasswordEntryTest{
     assertNotSame("generate password must generate a new password", 
         password, entry.getPassword());
 
-  }*/
+  }
 
   /*@Test
   public void testEquals(){
@@ -101,4 +101,4 @@ public class PasswordEntryTest{
         entry.equals(new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM)));
 
   }*/
-
+}

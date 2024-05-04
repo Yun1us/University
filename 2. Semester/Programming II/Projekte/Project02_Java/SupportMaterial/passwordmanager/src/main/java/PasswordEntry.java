@@ -1,3 +1,5 @@
+// import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
+
 public class PasswordEntry {
     final PasswordComplexity passwordComplexity;
     final String website;
@@ -55,14 +57,23 @@ public class PasswordEntry {
     public void regeneratePassword(){
         password = passwordComplexity.generatePassword();
     }
- 
 
+    public String toString(){
+        return String.format("%s L:%s P:%s (%s)", website, loginName, password, passwordComplexity);
+    }
 
-    /* public boolean equals(Object other){
+    @Override 
+    public boolean equals(Object other){
+        if (this == other){
+        return true;}
+
+        else if (other == null){
+        return false;}
+        
+        else if (getClass() != other.getClass()){
+        return false;}
+
+        return true;
         
     }
-    public String toString(){
-
-    }*/
-}  
-
+}
