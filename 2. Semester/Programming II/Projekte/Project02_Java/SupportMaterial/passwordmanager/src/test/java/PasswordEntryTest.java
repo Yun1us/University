@@ -1,10 +1,9 @@
-
 import org.junit.*;
 import static org.junit.Assert.*;
 
 public class PasswordEntryTest{
 
-  /*@Test
+  @Test
   public void testConstructor(){
 
     PasswordEntry entry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
@@ -26,9 +25,9 @@ public class PasswordEntryTest{
     entry = new PasswordEntry("reddit.com", "", PasswordComplexity.MEDIUM);
     assertEquals("empty login name is possible", "", entry.getLoginName());
 
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void testConstructor2(){
     PasswordEntry entry = new PasswordEntry("reddit.com", PasswordComplexity.MEDIUM);
     assertEquals("website must be reddit.com", "reddit.com", entry.getWebsite());
@@ -42,9 +41,9 @@ public class PasswordEntryTest{
         IllegalArgumentException.class, () -> new PasswordEntry("   ", PasswordComplexity.MEDIUM));
     assertThrows("password complexity must not be null",
         IllegalArgumentException.class, () -> new PasswordEntry("reddit.com", null));
-  }*/
+  }
 
-  /*@Test
+   @Test
   public void testCopyConstructor(){
     PasswordEntry entry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
     PasswordEntry anotherEntry = new PasswordEntry("reddit.com", "lurker123", PasswordComplexity.MEDIUM);
@@ -60,7 +59,7 @@ public class PasswordEntryTest{
         IllegalArgumentException.class,
         () -> new PasswordEntry(null));
 
-  }*/
+  }}
 
   /*@Test
   public void testRegeneratePassword(){
@@ -103,4 +102,3 @@ public class PasswordEntryTest{
 
   }*/
 
-}

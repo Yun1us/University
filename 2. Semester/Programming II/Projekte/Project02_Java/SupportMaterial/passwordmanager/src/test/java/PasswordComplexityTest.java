@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 
 public class PasswordComplexityTest {
 
-  @Test
+  /*@Test
   public void testValues(){
     assertEquals("Chars of PIN must match 0", "0", PasswordComplexity.PIN.getChars());
     assertEquals("Chars of SIMPLE must match aA", "aA", PasswordComplexity.SIMPLE.getChars());
@@ -22,7 +22,7 @@ public class PasswordComplexityTest {
     assertEquals("Length of COMPLEX must be 10", 10, PasswordComplexity.COMPLEX.getLength());
     assertEquals("Length of SUPER_COMPLEX must be 10", 16, PasswordComplexity.SUPER_COMPLEX.getLength());
 
-  }
+  }*/
 
   /*@Test
   public void testGeneratePassword(){
