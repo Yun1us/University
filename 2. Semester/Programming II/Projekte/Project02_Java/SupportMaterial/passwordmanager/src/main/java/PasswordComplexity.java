@@ -9,7 +9,7 @@ public enum PasswordComplexity {
     private final String chars;
     private final int length;
 
-Werte(String chars, int length){
+PasswordComplexity(String chars, int length){
     this.chars = chars;
     this.length = length;
 }
@@ -22,7 +22,7 @@ public int getLength(){
 }
 
 public String generatePassword(){
-    Random intrandom = new Random();
+    Random random = new Random();
     String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:";
     StringBuilder password = new StringBuilder(this.length);
     for(int i = 0; i < this.length; i++){
@@ -37,10 +37,11 @@ public String generatePassword(){
             password.append(allowedChars.charAt(random.nextInt(62)));
             break;
             case COMPLEX: case SUPER_COMPLEX:
-            password.append(allowedChars.chatAt(random.nextInt(71)));
+            password.append(allowedChars.charAt(random.nextInt(71)));
             break;
         }
     }
+    return password.toString();
     }
 }
 
