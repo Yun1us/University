@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PasswordComplexity",
+            "request": "launch",
+            "mainClass": "PasswordComplexity",
+            "projectName": "University_bc6d5d11"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
