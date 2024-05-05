@@ -1,8 +1,8 @@
 import com.google.common.collect.ImmutableList;
 
 public class PasswordStore {
-    private static int size = 0;
-    private static PasswordEntry firstEntry = null;
+    private int size;
+    private PasswordEntry firstEntry;
 
 
     public PasswordStore(){
@@ -20,11 +20,6 @@ public class PasswordStore {
 
     public void setFirstEntry(PasswordEntry firstEntry){
         this.firstEntry = firstEntry;
-        if (firstEntry == null){
-            size= 0;    
-        }
-        else
-        size = 1;
     }
 
     public boolean contains(PasswordEntry entry){
@@ -44,12 +39,9 @@ public class PasswordStore {
         if(entry == null){
             throw new IllegalArgumentException("entry darf nicht null sein!");
         }
-
-        else if (contains(entry)){
+        if(contains(entry)){
             return false;
         }
-
-        
         else{
             entry.setNextEntry(firstEntry);
             setFirstEntry(entry); 

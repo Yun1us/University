@@ -51,11 +51,11 @@ public class PasswordEntry {
     public PasswordEntry getNextEntry(){
         return nextEntry;
     }
-    static public void setNextEntry(PasswordEntry nextEntry){
-        PasswordEntry.nextEntry = nextEntry;
+    public void setNextEntry(PasswordEntry nextEntry){
+        this.nextEntry = nextEntry;
     }
     public void regeneratePassword(){
-        password = passwordComplexity.generatePassword();
+        this.password = passwordComplexity.generatePassword();
     }
 
     public String toString(){
@@ -77,7 +77,6 @@ public class PasswordEntry {
         
         return Objects.equals(this.website, that.website) &&
         Objects.equals(this.loginName, that.loginName) &&
-        Objects.equals(this.password, that.password) &&
-        Objects.equals(this.passwordComplexity, that.passwordComplexity);
+        passwordComplexity == that.passwordComplexity;
     }
 }

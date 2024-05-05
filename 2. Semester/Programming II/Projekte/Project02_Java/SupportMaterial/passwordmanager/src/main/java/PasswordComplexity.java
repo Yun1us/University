@@ -24,20 +24,20 @@ public int getLength(){
 public String generatePassword(){
     Random random = new Random();
     String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:";
-    StringBuilder password = new StringBuilder(this.length);
-    for(int i = 0; i < this.length; i++){
+    StringBuilder password = new StringBuilder();
+    for(int i = 0; i < length; i++){
         switch(this){
             case PIN:
             password.append(allowedChars.charAt(random.nextInt(10)));
             break;
             case SIMPLE:
-            password.append(allowedChars.charAt(random.nextInt(10,62)));
+            password.append(allowedChars.charAt(random.nextInt(10,allowedChars.length()-8)));
             break;
             case MEDIUM:
-            password.append(allowedChars.charAt(random.nextInt(62)));
+            password.append(allowedChars.charAt(random.nextInt(allowedChars.length()-8)));
             break;
             case COMPLEX: case SUPER_COMPLEX:
-            password.append(allowedChars.charAt(random.nextInt(71)));
+            password.append(allowedChars.charAt(random.nextInt(allowedChars.length())));
             break;
         }
     }
