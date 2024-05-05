@@ -47,7 +47,7 @@ public class PasswordStoreTest{
 
   }
 
-  /*@Test
+  @Test
   public void testAdd(){
 
     PasswordStore store = new PasswordStore();
@@ -77,7 +77,7 @@ public class PasswordStoreTest{
     assertFalse("must return false when instance equal to e2 is added again", 
         store.add(new PasswordEntry("moodle.haw-landshut.de", "s-cauer", PasswordComplexity.MEDIUM)));
 
-  }*/
+  }
 
   /*@Test
   public void testGet(){
