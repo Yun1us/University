@@ -1,5 +1,5 @@
 // import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
-
+import java.util.Objects;
 public class PasswordEntry {
     final PasswordComplexity passwordComplexity;
     final String website;
@@ -73,7 +73,11 @@ public class PasswordEntry {
         else if (getClass() != other.getClass()){
         return false;}
 
-        return true;
+        PasswordEntry that = (PasswordEntry) other;       
         
+        return Objects.equals(this.website, that.website) &&
+        Objects.equals(this.loginName, that.loginName) &&
+        Objects.equals(this.password, that.password) &&
+        Objects.equals(this.passwordComplexity, that.passwordComplexity);
     }
 }
