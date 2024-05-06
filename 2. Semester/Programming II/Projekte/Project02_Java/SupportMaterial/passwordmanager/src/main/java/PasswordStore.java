@@ -129,8 +129,8 @@ public class PasswordStore {
      * @return der Passworteintrag am angegebenen Index
      * @throws IllegalArgumentException wenn der Index außerhalb der Grenzen liegt
      */
-    public PasswordEntry get(int index){
-        if (index < 0 || index >= size){
+    public PasswordEntry get(int index){ //gibt den Eintrag übergebenen Index in der verketteten Liste zurück
+        if (index < 0 || index > size){
             throw new IllegalArgumentException("Index außerhalb der Grenzen");
         }
         PasswordEntry current = firstEntry;
