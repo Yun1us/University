@@ -1,18 +1,27 @@
-// import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
 import java.util.Objects;
+
+/**
+ * @author Inoussa Adouba
+ * Diese Klasse repräsentiert einen Passworteintrag mit Website, Login-Namen und Passwortkomplexität.
+ */
 public class PasswordEntry {
-    final PasswordComplexity passwordComplexity;
-    final String website;
-    final String loginName;
-    String password;
-    static PasswordEntry nextEntry = null;
+    final PasswordComplexity passwordComplexity; // Die Komplexität des Passworts.
+    final String website; // Die Webseite, für die das Passwort erstellt wurde.
+    final String loginName; // Der Loginname für die Webseite.
+    String password; // Das generierte Passwort.
+    static PasswordEntry nextEntry = null; // Verkettung von Passworteinträgen.
 
-
-    public PasswordEntry(String website, String loginName, PasswordComplexity passwordComplexity){
-        if(website == null || website.isBlank() ) {
-            throw new IllegalArgumentException("website darf nicht null oder blank sein!");
+    /**
+     * Konstruktor für einen vollständigen Passworteintrag.
+     * @param website Die Webseite.
+     * @param loginName Der Login-Name.
+     * @param passwordComplexity Die gewählte Passwortkomplexität.
+     */
+    public PasswordEntry(String website, String loginName, PasswordComplexity passwordComplexity) {
+        if (website == null || website.isBlank()) {
+            throw new IllegalArgumentException("Website darf nicht null oder leer sein!");
         }
-        if(passwordComplexity == null){
+        if (passwordComplexity == null) {
             throw new IllegalArgumentException("PasswordComplexity darf nicht null sein!");
         }
         this.website = website;
@@ -21,62 +30,57 @@ public class PasswordEntry {
         this.password = passwordComplexity.generatePassword();
     }
 
-    public PasswordEntry(String website, PasswordComplexity passwordComplexity){
+    /**
+     * Vereinfachter Konstruktor für einen Passworteintrag ohne Login-Namen.
+     * @param website Die Webseite.
+     * @param passwordComplexity Die Passwortkomplexität.
+     */
+    public PasswordEntry(String website, PasswordComplexity passwordComplexity) {
         this(website, null, passwordComplexity);
     }
-    
-    public PasswordEntry(PasswordEntry other){
-        if(other == null){
-            throw new IllegalArgumentException("other darf nicht null sein!");
+
+    /**
+     * Kopierkonstruktor.
+     * @param other Ein anderer Passworteintrag, der kopiert wird.
+     */
+    public PasswordEntry(PasswordEntry other) {
+        if (other == null) {
+            throw new IllegalArgumentException("Other darf nicht null sein!");
         }
         this.website = other.getWebsite();
         this.loginName = other.getLoginName();
         this.passwordComplexity = other.getPasswordComplexity();
         this.password = other.getPassword();
     }
-    public String getLoginName(){
-        return loginName;
-    }
 
-    public String getWebsite(){
-        return website;
-    }
-    public PasswordComplexity getPasswordComplexity(){
-        return passwordComplexity;
-    }
-    
-    public String getPassword(){
-        return password;
-    }
-    public PasswordEntry getNextEntry(){
-        return nextEntry;
-    }
-    public void setNextEntry(PasswordEntry nextEntry){
-        this.nextEntry = nextEntry;
-    }
-    public void regeneratePassword(){
+    // Getter-Methoden für die Klasse
+    public String getLoginName() { return loginName; }
+    public String getWebsite() { return website; }
+    public PasswordComplexity getPasswordComplexity() { return passwordComplexity; }
+    public String getPassword() { return password; }
+    public PasswordEntry getNextEntry() { return nextEntry; }
+    public void setNextEntry(PasswordEntry nextEntry) { this.nextEntry = nextEntry; }
+
+    /**
+     * Regeneriert das Passwort für diesen Eintrag basierend auf der aktuellen Passwortkomplexität.
+     */
+    public void regeneratePassword() {
         this.password = passwordComplexity.generatePassword();
     }
 
-    public String toString(){
-        return String.format("%s L:%s P:%s (%s)", website, loginName, password, passwordComplexity);
+    
+    public String toString() {
+        return String.format("%s L:%s P:%s (%s)", website, loginName, password, passwordComplexity); //Formatiert den String in gewünschter Weise. 
     }
 
-    @Override 
-    public boolean equals(Object other){
-        if (this == other){
-        return true;}
-
-        else if (other == null){
-        return false;}
-        
-        else if (getClass() != other.getClass()){
-        return false;}
-
-        PasswordEntry that = (PasswordEntry) other;       
-        
+    @Override
+    public boolean equals(Object other) {  // Equals checkt ob ein anderes Objekt gleich dem spezifischen PasswordEntry-Objekt ist. 
+        if (this == other) return true;
+        if (other == null) return false;
+        if (getClass() != other.getClass()) return false;
+        PasswordEntry that = (PasswordEntry) other;
         return Objects.equals(this.website, that.website) &&
-        Objects.equals(this.loginName, that.loginName) &&
-        passwordComplexity == that.passwordComplexity;
+               Objects.equals(this.loginName, that.loginName) &&
+               passwordComplexity == that.passwordComplexity;
     }
 }

@@ -1,40 +1,52 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/**
+ * beinhaltet das Hauptprogramm zur Verwaltung von Zugangsdaten
+ */
 public class PasswordManager {
+  /**
+   * Erstellt mehrere Instanzen von PasswordEntry
+   * @param store
+   */
 
   private static void addExampleEntries(PasswordStore store){
+    PasswordEntry entryReddit = new PasswordEntry("reddit.com", "extremelurker", PasswordComplexity.SIMPLE); //Jede Instanz repraesentiert Zugangsdaten fuer eine bestimmte Website
+    PasswordEntry entryGithub = new PasswordEntry("github.com", "java-programmer", PasswordComplexity.COMPLEX);
+    PasswordEntry entryMoodle = new PasswordEntry("moodle.haw-landshut.de", "student", PasswordComplexity.MEDIUM);
 
+    store.add(entryReddit);       //PasswordEntry- Insatanzen werden zum PasswordStore hinzugefuegt mit Hilfe von der add - Methode
+    store.add(entryGithub);
+    store.add(entryMoodle);
 
   }
 
   private static void addPasswordEntry(PasswordStore store, String website, 
       String loginName, PasswordComplexity complexity){
 
-    /*PasswordEntry entry = new PasswordEntry(website, loginName, complexity);
+    PasswordEntry entry = new PasswordEntry(website, loginName, complexity);
 
     if (store.add(entry)){
       System.out.printf("New entry added: %s%n", entry);
     } else {
       System.out.println("Entry already exists");
-    }*/
+    }
 
   }
 
   private static void printPasswordStore(PasswordStore store){
-    // store.printPasswordStore();
+    store.printPasswordStore();
   }
 
   private static void printPasswordStoreForWebsite(PasswordStore store, String website){
-    // store.printPasswordStore(website);
+    store.printPasswordStore(website);
   }
 
   private static void regeneratePassword(PasswordStore store, int index){
-    // store.get(index).regeneratePassword();
+    store.get(index).regeneratePassword();
   }
 
   private static void removeEntry(PasswordStore store, int index){
-    // store.remove(index);
+    //store.remove(index);
   }
 
 

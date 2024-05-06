@@ -1,47 +1,69 @@
 import java.util.Random;
-public enum PasswordComplexity {    //enum PasswordComplexity
-    PIN("0", 4),    // festlegung der Konstanten und deren chars sowie auch lengths
-    SIMPLE("aA", 5),
-    MEDIUM("aA0", 8),
-    COMPLEX("aA0!", 10),
-    SUPER_COMPLEX("aA0!", 16);
 
-    private final String chars; //initialisierung von chars und length
-    private final int length;
+/**
+ * @author Inoussa Adouba
+ * Dieses Enum definiert verschiedene Passwortkomplexitätsstufen.
+ */
+public enum PasswordComplexity {
+    PIN("0", 4),  // Definiert eine PIN-Komplexität mit nur Ziffern und einer Länge von 4.
+    SIMPLE("aA", 5),  // Einfache Komplexität mit Groß- und Kleinbuchstaben von Länge 5.
+    MEDIUM("aA0", 8),  // Mittlere Komplexität mit Buchstaben und Zahlen von Länge 8.
+    COMPLEX("aA0!", 10),  // Hohe Komplexität inklusive Sonderzeichen vonLänge 10.
+    SUPER_COMPLEX("aA0!", 16);  // Sehr hohe Komplexität, gleiche Zeichen wie COMPLEX, aber Länge 16.
 
-PasswordComplexity(String chars, int length){ //Konstruktor der PasswordComplexity enum
-    this.chars = chars;
-    this.length = length;
-}
+    private final String chars;  // Zeichen, die für das Passwort verwendet werden.
+    private final int length;  // Länge des zu generierenden Passworts.
 
-public String getChars(){ //getter methode chars die chars returned
-    return chars;
-}
-public int getLength(){ //getter methode geLength die die länge returned
-    return length;
-}
+    /**
+     * Konstruktor für Passwortkomplexität.
+     * @param chars Zeichen die in den passwörtern verwendet werden.
+     * @param length Länge des Passworts.
+     */
+    PasswordComplexity(String chars, int length) {
+        this.chars = chars;
+        this.length = length;
+    }
 
-public String generatePassword(){ //generate password generiert passwörter 
-    Random random = new Random(); //initialisierung von Random
-    String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:"; //allowedChars variable die alle erlaubten charakter beinhaltet
-    StringBuilder password = new StringBuilder(); //effektivere weise an den String password dinge zu appenden 
-    for(int i = 0; i < length; i++){ //schleife 
-        switch(this){ //switcher der zwischen die Complexities switcht  
-            case PIN:
-            password.append(allowedChars.charAt(random.nextInt(10))); //gibt eine random zahl von 0-9 wieder die auf den index von allowedChars basiert.
-            break;
-            case SIMPLE:
-            password.append(allowedChars.charAt(random.nextInt(10,allowedChars.length()-8)));
-            break;
-            case MEDIUM:
-            password.append(allowedChars.charAt(random.nextInt(allowedChars.length()-8)));
-            break;
-            case COMPLEX: case SUPER_COMPLEX:
-            password.append(allowedChars.charAt(random.nextInt(allowedChars.length())));
-            break;
+    /**
+     * Gibt die für die Complexity verwendeten Zeichen zurück.
+     * @return Die Zeichen als String.
+     */
+    public String getChars() {
+        return chars;
+    }
+
+    /**
+     * Gibt die Länge der Passwörter zurück.
+     * @return Die Länge als int.
+     */
+    public int getLength() {
+        return length;
+    }
+
+    /**
+     * Generiert ein Passwort basierend auf Komplexität.
+     * @return Das generierte Passwort als String.
+     */
+    public String generatePassword() {
+        Random random = new Random();
+        String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:";
+        StringBuilder password = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            switch (this) {
+                case PIN:
+                    password.append(allowedChars.charAt(random.nextInt(10)));
+                    break;
+                case SIMPLE:
+                    password.append(allowedChars.charAt(random.nextInt(10, allowedChars.length() - 8)));
+                    break;
+                case MEDIUM:
+                    password.append(allowedChars.charAt(random.nextInt(allowedChars.length() - 8)));
+                    break;
+                case COMPLEX: case SUPER_COMPLEX:
+                    password.append(allowedChars.charAt(random.nextInt(allowedChars.length())));
+                    break;
+            }
         }
-    }
-    return password.toString(); //password wird in ein immutable String verwandelt
+        return password.toString();
     }
 }
-

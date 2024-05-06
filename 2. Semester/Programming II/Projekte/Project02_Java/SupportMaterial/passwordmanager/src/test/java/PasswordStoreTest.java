@@ -79,7 +79,7 @@ public class PasswordStoreTest{
 
   }
 
-  /*@Test
+  @Test
   public void testGet(){
     PasswordStore store = new PasswordStore();
 
@@ -94,7 +94,7 @@ public class PasswordStoreTest{
     assertThrows("index -1 is invalid", IllegalArgumentException.class, () -> store.get(-1));
     assertThrows("index 4 is invalid", IllegalArgumentException.class, () -> store.get(4));
 
-  }*/
+  }
 
   /*@Test 
   public void testRemove(){
