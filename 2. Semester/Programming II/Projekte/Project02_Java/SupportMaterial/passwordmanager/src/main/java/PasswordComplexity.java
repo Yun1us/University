@@ -28,7 +28,7 @@ public enum PasswordComplexity {
      * Gibt die für die Complexity verwendeten Zeichen zurück.
      * @return Die Zeichen als String.
      */
-    public String getChars() {
+    public String getChars() { //Getter für chars 
         return chars;
     }
 
@@ -36,8 +36,8 @@ public enum PasswordComplexity {
      * Gibt die Länge der Passwörter zurück.
      * @return Die Länge als int.
      */
-    public int getLength() {
-        return length;
+    public int getLength() { //Getter Methode für length
+        return length; 
     }
 
     /**
@@ -46,8 +46,8 @@ public enum PasswordComplexity {
      */
     public String generatePassword() {
         Random random = new Random();
-        String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:";
-        StringBuilder password = new StringBuilder();
+        String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:"; //Beinhaltet alle erlaubten Zeichen in einem String.
+        StringBuilder password = new StringBuilder(); //StringBuilder statt String verwenden da dieser mutable ist.
         for (int i = 0; i < length; i++) {
             switch (this) {
                 case PIN:
@@ -64,6 +64,6 @@ public enum PasswordComplexity {
                     break;
             }
         }
-        return password.toString();
+        return password.toString(); //Password wird als String ausgegeben
     }
 }

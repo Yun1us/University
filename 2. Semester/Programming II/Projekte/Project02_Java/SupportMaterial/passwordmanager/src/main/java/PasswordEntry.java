@@ -5,11 +5,11 @@ import java.util.Objects;
  * Diese Klasse repräsentiert einen Passworteintrag mit Website, Login-Namen und Passwortkomplexität.
  */
 public class PasswordEntry {
-    final PasswordComplexity passwordComplexity; // Die Komplexität des Passworts.
-    final String website; // Die Webseite, für die das Passwort erstellt wurde.
-    final String loginName; // Der Loginname für die Webseite.
-    String password; // Das generierte Passwort.
-    static PasswordEntry nextEntry = null; // Verkettung von Passworteinträgen.
+    private final PasswordComplexity passwordComplexity; // Die Komplexität des Passworts.
+    private final String website; // Die Webseite, für die das Passwort erstellt wurde.
+    private final String loginName; // Der Loginname für die Webseite.
+    private String password; // Das generierte Passwort.
+    private PasswordEntry nextEntry = null; // Verkettung von Passworteinträgen.
 
     /**
      * Konstruktor für einen vollständigen Passworteintrag.
@@ -17,11 +17,11 @@ public class PasswordEntry {
      * @param loginName Der Login-Name.
      * @param passwordComplexity Die gewählte Passwortkomplexität.
      */
-    public PasswordEntry(String website, String loginName, PasswordComplexity passwordComplexity) {
-        if (website == null || website.isBlank()) {
+    public PasswordEntry(String website, String loginName, PasswordComplexity passwordComplexity) { //Konstruktor der die drei Attribute website,loginName und passwordComplexity initialisiert
+        if (website == null || website.isBlank()) { //check ob wesite null oder blank ist
             throw new IllegalArgumentException("Website darf nicht null oder leer sein!");
         }
-        if (passwordComplexity == null) {
+        if (passwordComplexity == null) { // check ob passwordComplexity null ist
             throw new IllegalArgumentException("PasswordComplexity darf nicht null sein!");
         }
         this.website = website;
@@ -77,8 +77,8 @@ public class PasswordEntry {
     public boolean equals(Object other) {  // Equals checkt ob ein anderes Objekt gleich dem spezifischen PasswordEntry-Objekt ist. 
         if (this == other) return true;
         if (other == null) return false;
-        if (getClass() != other.getClass()) return false;
-        PasswordEntry that = (PasswordEntry) other;
+        if (this.getClass() != other.getClass()) return false;
+        PasswordEntry that = (PasswordEntry) other; 
         return Objects.equals(this.website, that.website) &&
                Objects.equals(this.loginName, that.loginName) &&
                passwordComplexity == that.passwordComplexity;
