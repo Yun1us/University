@@ -52,8 +52,7 @@ public class PasswordEntryTest{
     assertEquals("website of clone must be reddit.com", "reddit.com", copy.getWebsite());
     assertEquals("login of clone must be lurker123", "lurker123", copy.getLoginName());
     assertEquals("password of clone must be 12345", entry.getPassword(), copy.getPassword());
-    assertSame("next entry of copy must be the same as next entry of original entry",
-        anotherEntry, copy.getNextEntry());
+    assertSame("next entry of copy must be the same as next entry of original entry",anotherEntry, copy.getNextEntry());
 
     assertThrows("other must not be null",
         IllegalArgumentException.class,

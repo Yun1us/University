@@ -48,7 +48,7 @@ public enum PasswordComplexity {
         Random random = new Random();
         String allowedChars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?+-;,.:"; //Beinhaltet alle erlaubten Zeichen in einem String.
         StringBuilder password = new StringBuilder(); //StringBuilder statt String verwenden da dieser mutable ist.
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < this.length; i++) {
             switch (this) {
                 case PIN:
                     password.append(allowedChars.charAt(random.nextInt(10)));

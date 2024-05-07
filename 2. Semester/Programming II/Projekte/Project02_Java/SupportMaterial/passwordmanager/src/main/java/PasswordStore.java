@@ -105,7 +105,7 @@ public class PasswordStore {
      * Druckt alle Passworteinträge für eine bestimmte Webseite aus.
      *
      * @param website die Webseite, nach der die Einträge gefiltert werden sollen
-     * @throws IllegalArgumentException wenn der Parameter website null ist
+     * @throws IllegalArgumentException wenn der Par|||||||ameter website null ist
      */
     public void printPasswordStore(String website){
         if (website == null){

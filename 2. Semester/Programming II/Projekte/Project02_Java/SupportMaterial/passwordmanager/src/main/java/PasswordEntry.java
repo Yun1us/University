@@ -51,6 +51,7 @@ public class PasswordEntry {
         this.loginName = other.getLoginName();
         this.passwordComplexity = other.getPasswordComplexity();
         this.password = other.getPassword();
+        this.nextEntry = other.nextEntry;
     }
 
     // Getter-Methoden für die Klasse
