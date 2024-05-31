@@ -6,12 +6,38 @@ public class Caesar{
   public final static String EXAMPLE_KEY = "HAMNOGPQFEISTLJVWDXKCYZRBU";
 
   public static String applyCaesar(String text, String key, String clear){
-    // TODO
-    return text;
+    text = text.toUpperCase();
+    StringBuilder verschluesselt = new StringBuilder(); 
+    for (int i = 0; text.length(); i++){
+      char c = text.charAt(i);
+      int position = key.indexOf(c);
+
+      if(position != -1){ // throws out -1 if char is not found in key 
+        verschluesselt.append(clear.charAt(position));
+      } else {
+        verschluesselt.append(c);
+      }
+    return verschluesselt.toString();
+    }
+
   }
+  
 
   public static void printStatistics(String text){
-    // TODO
+    double total = text.length();
+    int amount = 0;
+    double percent = (amount / total) * 100;
+    Object[][] array = new Object[26][2]; 
+
+
+    for(int i = 0; i < 26; i++){
+      array[i][0] = (char) ("A" + i);
+      array[i][1] = (int) (percent);
+    }
+    for(int j = 0; j < text.length(); j++){
+      if(text.charAt(j) == array[i][0])
+        amount++;
+    }
   }
 
   public static void main(String[] args){
