@@ -7,37 +7,58 @@ public class Caesar{
 
   public static String applyCaesar(String text, String key, String clear){
     text = text.toUpperCase();
-    StringBuilder verschluesselt = new StringBuilder(); 
-    for (int i = 0; text.length(); i++){
+    StringBuilder verschluesselt = new StringBuilder();
+
+    for(int i = 0; i < text.length(); i++){
       char c = text.charAt(i);
       int position = key.indexOf(c);
 
-      if(position != -1){ // throws out -1 if char is not found in key 
+      if(position != -1){
         verschluesselt.append(clear.charAt(position));
-      } else {
+      } else{
         verschluesselt.append(c);
       }
-    return verschluesselt.toString();
     }
 
   }
   
 
   public static void printStatistics(String text){
-    double total = text.length();
-    int amount = 0;
-    double percent = (amount / total) * 100;
-    Object[][] array = new Object[26][2]; 
+/*     Object[][] array = new Object[26][2]; 
 
 
     for(int i = 0; i < 26; i++){
       array[i][0] = (char) ("A" + i);
-      array[i][1] = (int) (percent);
+      array[i][1] = 0;
     }
+
     for(int j = 0; j < text.length(); j++){
-      if(text.charAt(j) == array[i][0])
-        amount++;
+      char currentchar = Character.toUpperCase(text.charAt(j));
+      if(currentchar >= "A" && currentchar <= "Z"){
+        int index = currentchar - "A";
+        array[index][1] = (int) array[index] + 1;
+      }
+    } */
+    int amountofletters = 0;
+    int[] count = new int[26];
+    int l = text.length();
+
+    for(int i = 0; i < 26; i++){
+      char currentchar = text.charAt(i);
+      if(ABC.contains(String.valueOf(currentchar))){
+        amountofletters++;
+        count[ABC.indexOf(currentchar)]++;
+      }
     }
+
+    for(int j = 0; j < 26; j++){
+      if(count[j] > 0){
+        double percent = ((double) count[j] / amountofletters) * 100;
+        System.out.println(percent);
+    }
+  }
+
+
   }
 
   public static void main(String[] args){
