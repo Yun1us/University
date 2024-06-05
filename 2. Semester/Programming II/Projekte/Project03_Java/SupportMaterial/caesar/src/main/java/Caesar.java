@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Caesar{
 
   public final static String ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -19,6 +17,7 @@ public class Caesar{
         verschluesselt.append(c);
       }
     }
+    return verschluesselt.toString();
 
   }
   
@@ -41,9 +40,10 @@ public class Caesar{
     } */
     int amountofletters = 0;
     int[] count = new int[26];
-    int l = text.length();
+    int length = text.length();
+    text = text.toUpperCase();
 
-    for(int i = 0; i < 26; i++){
+    for(int i = 0; i < length; i++){
       char currentchar = text.charAt(i);
       if(ABC.contains(String.valueOf(currentchar))){
         amountofletters++;
@@ -54,7 +54,7 @@ public class Caesar{
     for(int j = 0; j < 26; j++){
       if(count[j] > 0){
         double percent = ((double) count[j] / amountofletters) * 100;
-        System.out.println(percent);
+        System.out.printf("%c: %.2f%%%n", ABC.charAt(j), percent);
     }
   }
 

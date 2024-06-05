@@ -1,15 +1,15 @@
 import static org.junit.Assert.*;
 
-import java.util.Arrays;
+/* import java.util.Arrays;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.stream.Stream;*/
 
 import org.junit.*;
 
 public class BingoTest {
 
 
-  /*
+  
   @Test
   public void testBingoExample(){
     assertNotNull("BINGO_EXAMPLE must not be null", Bingo.BINGO_EXAMPLE);
@@ -46,9 +46,9 @@ public class BingoTest {
     assertEquals("expected 48 at Bingo.BINGO_EXAMPLE[4][3]", 48, Bingo.BINGO_EXAMPLE[4][3]);
     assertEquals("expected 67 at Bingo.BINGO_EXAMPLE[4][4]", 67, Bingo.BINGO_EXAMPLE[4][4]);
 
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void testContainsDuplicates(){
 
     assertFalse("must return false on bingo card without duplicats",
@@ -64,9 +64,9 @@ public class BingoTest {
         Bingo.containsDuplicates(example));
 
 
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void testCheckBingoCard(){
 
     assertThrows("null not allowed",
@@ -163,9 +163,9 @@ public class BingoTest {
         IllegalArgumentException.class,
         () -> Bingo.checkBingoCard(example));
     example[0][4] = 73;
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void testFillBingoCard(){
 
     assertThrows("number must not be 0",
@@ -193,9 +193,9 @@ public class BingoTest {
     assertFalse("must return false on number not on the card",
         Bingo.fillBingoCard(example, 60));
 
-  }*/
+  }
 
-  /*@Test
+  @Test
   public void testBingo(){
 
     assertFalse("must return false on no Bingo!",
@@ -241,7 +241,7 @@ public class BingoTest {
     assertTrue("must return true on Bingo! (other diagonal)",
         Bingo.bingo(example));
 
-  }*/
+  }
 
 
 
