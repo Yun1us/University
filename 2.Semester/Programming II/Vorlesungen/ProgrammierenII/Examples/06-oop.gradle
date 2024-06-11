@@ -1,0 +1,248 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '06-oop'
+
+// StaticImportExamples
+task(runStaticImportConflictExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.StaticImportExamples.staticImportConflictExample()
+  }
+}
+
+// ConstructorExample.java
+task(runInheritanceCopyConstructorExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ConstructorExamples.inheritanceCopyConstructorExample();
+  }
+}
+
+// CastExamples.java
+task(runObjectTypeRefExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.objectTypeRefExample();
+  }
+}
+
+task(runPrintNameExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.printNameExample();
+  }
+}
+
+task(runNarrowingCastExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.narrowingCastExample();
+  }
+}
+
+task(runNarrowingCastExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.narrowingCastExample2();
+  }
+}
+
+task(runInvalidNarrowingCastExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.invalidNarrowingCastExample();
+  }
+}
+
+task(runInstanceofOOPExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CastExamples.instanceofOOPExample();
+  }
+}
+
+// OverrideExamples
+task(runUseItemsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.OverrideExamples.useItemsExample()
+  }
+}
+
+task(runForgottenOverrideMessExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.OverrideExamples.forgottenOverrideMessExample()
+  }
+}
+
+task(runCovarianceExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.OverrideExamples.covarianceExample()
+  }
+}
+
+task(runDynamicVsStaticBindingExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.OverrideExamples.dynamicVsStaticBindingExample()
+  }
+}
+
+// GameTest.java
+
+task(runGameLoop, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.game.GameTest.gameLoop()
+  }
+}
+
+// ObjectOverrideExamples.java
+
+task(runOverrideToStringExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.overrideToStringExample()
+  }
+}
+
+task(runWrongEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.wrongEqualsExample()
+  }
+}
+
+task(runRightEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.rightEqualsExample()
+  }
+}
+
+task(runBadHashCodeExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.badHashCodeExample()
+  }
+}
+
+task(runGoodHashCodeExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.goodHashCodeExample()
+  }
+}
+
+task(runCopyConstructorGoneWrongExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.ObjectOverrideExamples.copyConstructorGoneWrongExample()
+  }
+}
+
+// BasicInterfaceExamples.java
+task(runInterfaceTypeExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.BasicInterfaceExamples.interfaceTypeExample()
+  }
+}
+
+task(runSumUnitsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.BasicInterfaceExamples.sumUnitsExample()
+  }
+}
+
+// MultipleInterfacesExamples.java
+task(runMultipleInterfacesExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.MultipleInterfacesExamples.multipleInterfacesExample()
+  }
+}
+
+task(runMultipleInterfacesExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.MultipleInterfacesExamples.multipleInterfacesExample2()
+  }
+}
+
+// SubinterfaceExamples.java
+task(runSubinterfaceExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.SubinterfaceExamples.subinterfaceExample();
+  }
+}
+
+// DefaultMethodsExamples.java
+task(runDefaultMethodExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.DefaultMethodExamples.defaultMethodExample();
+  }
+}
+
+// TraitsExamples.java
+task(runTraitsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.TraitsExamples.traitsExample();
+  }
+}
+
+// CloneableExamples.java
+task(runCallCloneExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CloneableExamples.callCloneExample();
+  }
+}
+
+task(runSlimeBlobCloneExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.CloneableExamples.slimeBlobCloneExample();
+  }
+}
+
+// NestedTypesExamples.java
+task(runBloblingsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.NestedTypesExamples.bloblingsExample()
+  }
+}
+
+task(runInnerBloblingsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.NestedTypesExamples.innerBloblingsExample()
+  }
+}
+
+task(runAnonymousBloblingsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.NestedTypesExamples.anonymousBloblingsExample()
+  }
+}
+
+task(runAnonymousConsumableExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.oop.NestedTypesExamples.anonymousConsumableExample()
+  }
+}

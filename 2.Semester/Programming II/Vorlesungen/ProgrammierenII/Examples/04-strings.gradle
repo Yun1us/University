@@ -1,0 +1,202 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '04-strings'
+
+// CharExpressions
+task(runCharPromotionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charPromotionExample()
+  }
+}
+
+task(runCharComparisonExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charComparisonExample()
+  }
+}
+
+task(runCharUpperLowerCaseExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charUpperLowerCaseExample()
+  }
+}
+
+task(runCharIsDigitExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charIsDigitExample()
+  }
+}
+
+task(runCharIsWhitespaceExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charIsWhitespaceExample()
+  }
+}
+
+task(runCharToUpperLowerCaseExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.CharExpressions.charToUpperLowerCaseExample()
+  }
+}
+
+// StringExamples
+task(runStringLiteralsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringLiteralsExample()
+  }
+}
+
+task(runStringCharAtExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringCharAtExample()
+  }
+}
+
+task(runStringConcatExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConcatExample()
+  }
+}
+
+task(runStringConcatExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConcatExample2()
+  }
+}
+
+task(runStringConcatExample3, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConcatExample3()
+  }
+}
+
+task(runStringConversionExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConversionExample()
+  }
+}
+
+task(runStringConversionExample2, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConversionExample2()
+  }
+}
+
+task(runStringConversionExample3, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringConversionExample3()
+  }
+}
+
+task(runStringFormatExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringFormatExample()
+  }
+}
+
+task(runStringParseIntDoubleExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringParseIntDoubleExample()
+  }
+}
+
+task(runStringTrimExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringTrimExample()
+  }
+}
+
+task(runStringIndexOfExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringIndexOfExample()
+  }
+}
+
+task(runStringIsBlankExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringIsBlankExample()
+  }
+}
+
+task(runStringSubstringExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringSubstringExample()
+  }
+}
+
+task(runStringToUpperCaseExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringToUpperCaseExample()
+  }
+}
+
+task(runStringReplaceExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringReplaceExample()
+  }
+}
+
+task(runStringStartsEndsWithExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringStartsEndsWithExample()
+  }
+}
+
+task(runStringIdentityExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringIdentityExample()
+  }
+}
+
+task(runStringEqualsExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringEqualsExample()
+  }
+}
+
+task(runStringCompareToExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringExamples.stringCompareToExample()
+  }
+}
+
+// StringBuilderExample
+task(runStringBuilderExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    de.hawlandshut.java1.strings.StringBuilderExample.stringBuilderExample()
+  }
+}
+

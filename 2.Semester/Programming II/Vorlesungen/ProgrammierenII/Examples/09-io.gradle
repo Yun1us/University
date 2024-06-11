@@ -1,0 +1,314 @@
+buildscript {
+    dependencies {
+        classpath files("build/classes/java/main")
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+def chapter = '09-io'
+import de.hawlandshut.java1.io.*;
+
+// ToUpperCaseExample.java
+task(runIOPlusOneStdInOut, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    ByteStreamExamples.ioPlusOneStdInOut();
+  }
+}
+
+task(runIoPlusOneFiles, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamExamples.ioPlusOneFiles();
+    }
+}
+
+task(runIoPlusOneNetwork, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamExamples.ioPlusOneNetwork();
+    }
+}
+
+task(runInputStreamExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamExamples.inputStreamExample();
+    }
+}
+
+task(runOutputStreamExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamExamples.outputStreamExample();
+    }
+}
+
+// SourcesSinksExamples.java
+task(runSourceSystemIn, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sourceSystemIn();
+    }
+}
+
+task(runSourceFileInputStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sourceFileInputStream();
+    }
+}
+
+task(runSourceByteArrayInputStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sourceByteArrayInputStream();
+    }
+}
+
+task(runSourcePipedInputStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sourcePipedInputStream();
+    }
+}
+
+task(runSinkSystemOutErr, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sinkSystemOutErr();
+    }
+}
+
+task(runSinkFileOutputStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sinkFileOutputStream();
+    }
+}
+
+task(runSinkByteArrayOutputStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      SourcesSinksExamples.sinkByteArrayOutputStream();
+    }
+}
+
+// ByteStreamFilterExamples.java
+task(runGzipExample, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  mainClass ='de.hawlandshut.java1.io.ByteStreamFilterExamples'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runDataOutputStreamExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamFilterExamples.dataOutputStreamExample();
+    }
+}
+
+task(runDataInputStreamExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamFilterExamples.dataInputStreamExample();
+    }
+}
+
+task(runCombinedFiltersExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ByteStreamFilterExamples.combinedFiltersExample();
+    }
+}
+
+// ReaderWriterExamples.java
+task(runWriteIntByteStream, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.writeIntByteStream();
+    }
+}
+
+task(runPrintIntText, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.printIntText();
+    }
+}
+
+task(runFileWriterEncoding, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.fileWriterEncoding();
+    }
+}
+  
+task(runFileReaderEncoding, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.fileReaderEncoding();
+    }
+}
+
+task(runInputStreamReaderExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.inputStreamReaderExample();
+    }
+}
+
+task(runOutputStreamWriterExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ReaderWriterExamples.outputStreamWriterExample();
+    }
+}
+  
+
+// CharsetExamples.java
+task(runCharsetListEncodings, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      CharsetExamples.charsetListEncodings();
+    }
+}
+
+task(runCharsetDefaultEncoding, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      CharsetExamples.charsetDefaultEncoding();
+    }
+}
+
+task(runCharsetEncodeDecode, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      CharsetExamples.charsetEncodeDecode();
+    }
+}
+
+// TextFilterExamples.java
+task(runBufferedWriterExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      TextFilterExamples.bufferedWriterExample();
+    }
+}
+
+
+task(runLineNumberReaderExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      TextFilterExamples.lineNumberReaderExample();
+    }
+}
+
+// PerformanceExample.java
+task(runCopyFileByteByByte, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PerformanceExample.copyFileByteByByte();
+    }
+}
+
+task(runCopyFileBuffer, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      int bufferSize = 16
+      for (int i = 0; i < 24; i++){
+        PerformanceExample.copyFileBuffer(bufferSize);
+        bufferSize *= 2
+      }
+    }
+}
+
+task(runCopyFileByteByByteWithBuffer, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PerformanceExample.copyFileByteByByteWithBuffer();
+    }
+}
+
+task(runCopyFileTransferTo, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PerformanceExample.copyFileTransferTo();
+    }
+}
+
+// PrintExamples.java
+
+task(runExportToCSVExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    PrintExamples.exportToCSVExample();
+  }
+}
+
+task(runExportToJsonExample, dependsOn: 'classes'){
+  group = chapter
+  doLast{
+    PrintExamples.exportToJsonExample();
+  }
+}
+
+// ParseExamples.java
+task(runParseCSVExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ParseExamples.parseCSVExample();
+    }
+}
+
+task(runParseCSVScannerExample, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      ParseExamples.parseCSVScannerExample();
+    }
+}
+
+// PathExamples
+task(runPathExampleUnix, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PathExamples.pathExample("dokumente/rezepte/ChiliConVeggie.txt")
+      PathExamples.pathExample("/etc/passwd")
+    }
+}
+
+// PathExamples
+task(runPathExampleWindows, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PathExamples.pathExample("Dokumente\\rezepte\\ChiliConVeggie.txt")
+      PathExamples.pathExample("C:\\Windows\\System32\\cmd.exe")
+    }
+}
+
+task(runPrintPathProperties, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  mainClass ='de.hawlandshut.java1.io.PathExamples'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runPathOperations, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PathExamples.pathOperations();
+    }
+}
+
+task(runReadWriteFile, dependsOn: 'classes'){
+  group = chapter
+    doLast{
+      PathExamples.readWriteFile();
+    }
+}
+
+task(runFileSearchExample, dependsOn: 'classes', type: JavaExec){
+  group = chapter
+  mainClass ='de.hawlandshut.java1.io.FileSearchExample'
+  classpath = sourceSets.main.runtimeClasspath
+}
