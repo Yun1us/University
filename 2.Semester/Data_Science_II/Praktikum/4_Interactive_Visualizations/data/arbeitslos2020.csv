@@ -1,0 +1,537 @@
+2020;01;  Schleswig-Holstein;92140;21506;5197;1842;9308;19359;28170
+2020;01001;      Flensburg, kreisfreie Stadt;4722;1144;274;102;568;782;1419
+2020;01002;      Kiel, Landeshauptstadt, kreisfreie Stadt;11776;3415;535;183;931;1959;4159
+2020;01003;      Lübeck, Hansestadt, kreisfreie Stadt;9404;2315;477;190;922;1746;3131
+2020;01004;      Neumünster, kreisfreie Stadt;3846;916;211;92;441;683;1334
+2020;01051;      Dithmarschen, Landkreis;4261;736;228;123;567;885;1188
+2020;01053;      Herzogtum Lauenburg, Landkreis;5785;1444;356;141;643;1269;1823
+2020;01054;      Nordfriesland, Landkreis;4970;872;269;102;543;1137;1723
+2020;01055;      Ostholstein, Landkreis;5788;1002;363;122;580;1582;1765
+2020;01056;      Pinneberg, Landkreis;9486;3050;492;148;867;2000;2402
+2020;01057;      Plön, Landkreis;3149;503;198;75;338;791;835
+2020;01058;      Rendsburg-Eckernförde, Landkreis;6378;1205;400;134;687;1493;1643
+2020;01059;      Schleswig-Flensburg, Landkreis;5694;862;464;116;556;1366;2145
+2020;01060;      Segeberg, Landkreis;7694;1778;441;135;743;1679;2128
+2020;01061;      Steinburg, Landkreis;4179;833;226;94;466;895;1339
+2020;01062;      Stormarn, Landkreis;5008;1432;265;85;457;1094;1137
+2020;02;  Hamburg;80677;27896;3439;1170;6803;12894;20218
+2020;03;  Niedersachsen;251377;67117;13043;4820;27165;50202;80872
+2020;031;    Braunschweig, Stat. Region;50066;12555;2250;880;5277;9555;16661
+2020;03101;      Braunschweig, kreisfreie Stadt;7563;1958;362;99;613;1366;2353
+2020;03102;      Salzgitter, kreisfreie Stadt;5399;2135;199;98;621;824;1884
+2020;03103;      Wolfsburg, kreisfreie Stadt;3504;1317;139;58;393;548;1026
+2020;03151;      Gifhorn, Landkreis;4279;909;167;73;496;830;1308
+2020;03152;      Göttingen, Landkreis;-;-;-;-;-;-;-
+2020;03153;      Goslar, Landkreis;4756;958;211;86;512;1097;1405
+2020;03154;      Helmstedt, Landkreis;3096;524;141;64;317;686;1226
+2020;03155;      Northeim, Landkreis;3977;744;185;72;456;810;1385
+2020;03156;      Osterode am Harz, Landkreis;-;-;-;-;-;-;-
+2020;03157;      Peine, Landkreis;3796;975;164;71;399;766;986
+2020;03158;      Wolfenbüttel, Landkreis;3127;663;145;51;321;676;972
+2020;03159;      Göttingen, Landkreis;10568;2373;537;209;1151;1951;4116
+2020;032;    Hannover, Stat. Region;78580;26132;3721;1486;8131;14843;26643
+2020;03241;      Region Hannover, Landkreis;47396;18110;2185;847;4640;8294;16653
+2020;03241001;      Hannover, Landeshauptstadt;27281;11088;1219;468;2549;4472;10170
+2020;03251;      Diepholz, Landkreis;5607;1592;212;125;684;1146;1634
+2020;03252;      Hameln-Pyrmont, Landkreis;5261;1487;287;82;529;1004;1722
+2020;03254;      Hildesheim, Landkreis;9614;2467;438;165;976;1971;3497
+2020;03255;      Holzminden, Landkreis;2375;406;121;52;266;567;843
+2020;03256;      Nienburg (Weser), Landkreis;3605;872;210;85;430;814;967
+2020;03257;      Schaumburg, Landkreis;4723;1198;268;130;606;1048;1328
+2020;033;    Lüneburg, Stat. Region;48811;10434;2556;1067;5539;10539;15135
+2020;03351;      Celle, Landkreis;5889;1260;307;150;714;1157;1807
+2020;03352;      Cuxhaven, Landkreis;6119;1182;349;140;644;1376;2160
+2020;03353;      Harburg, Landkreis;6166;1475;286;108;670;1485;1560
+2020;03354;      Lüchow-Dannenberg, Landkreis;1807;206;94;42;196;461;765
+2020;03355;      Lüneburg, Landkreis;5964;1259;268;115;651;1254;1700
+2020;03356;      Osterholz, Landkreis;2312;527;128;50;274;564;540
+2020;03357;      Rotenburg (Wümme), Landkreis;3658;668;227;96;489;817;1095
+2020;03358;      Heidekreis, Landkreis;4593;985;263;120;493;950;1857
+2020;03359;      Stade, Landkreis;6687;1744;334;152;799;1252;2190
+2020;03360;      Uelzen, Landkreis;2596;408;151;47;281;577;726
+2020;03361;      Verden, Landkreis;3021;719;150;48;327;645;735
+2020;034;    Weser-Ems, Stat. Region;73920;17996;4516;1387;8218;15266;22432
+2020;03401;      Delmenhorst, kreisfreie Stadt;4021;1457;198;67;404;725;1507
+2020;03402;      Emden, kreisfreie Stadt;2445;573;139;43;264;406;933
+2020;03403;      Oldenburg (Oldenburg), kreisfreie Stadt;6756;1756;423;132;774;1152;2107
+2020;03404;      Osnabrück, kreisfreie Stadt;7142;2356;352;123;734;1213;2511
+2020;03405;      Wilhelmshaven, kreisfreie Stadt;4557;973;287;72;402;953;1784
+2020;03451;      Ammerland, Landkreis;2763;551;160;49;279;645;641
+2020;03452;      Aurich, Landkreis;7254;1166;495;143;888;1512;2607
+2020;03453;      Cloppenburg, Landkreis;4440;1070;317;98;530;1037;1202
+2020;03454;      Emsland, Landkreis;5707;1381;284;114;664;1117;1091
+2020;03455;      Friesland, Landkreis;2380;364;193;39;244;634;615
+2020;03456;      Grafschaft Bentheim, Landkreis;2307;657;132;42;244;505;585
+2020;03457;      Leer, Landkreis;5306;982;394;99;604;1086;1729
+2020;03458;      Oldenburg, Landkreis;2729;604;180;62;303;658;653
+2020;03459;      Osnabrück, Landkreis;7294;1618;445;107;763;1797;2013
+2020;03460;      Vechta, Landkreis;3779;1602;170;99;527;675;858
+2020;03461;      Wesermarsch, Landkreis;3231;670;226;65;394;662;1185
+2020;03462;      Wittmund, Landkreis;1808;217;120;34;201;490;412
+2020;04;  Bremen;40822;16349;1608;744;4194;6466;16164
+2020;04011;      Bremen, kreisfreie Stadt;32456;13629;1292;588;3399;5068;13052
+2020;04012;      Bremerhaven, kreisfreie Stadt;8367;2720;317;155;794;1398;3112
+2020;05;  Nordrhein-Westfalen;733740;245144;51276;11687;65971;143117;272900
+2020;051;    Düsseldorf, Regierungsbezirk;234981;84228;15139;3611;19958;44477;88658
+2020;05111;      Düsseldorf, kreisfreie Stadt;26686;11049;1781;310;1826;5089;8715
+2020;05112;      Duisburg, kreisfreie Stadt;31324;13476;2037;484;2603;5270;12215
+2020;05113;      Essen, kreisfreie Stadt;33387;12422;1751;588;3008;4919;13089
+2020;05114;      Krefeld, kreisfreie Stadt;13587;4618;909;157;985;2693;5965
+2020;05116;      Mönchengladbach, kreisfreie Stadt;14091;4343;977;292;1507;2591;5293
+2020;05117;      Mülheim an der Ruhr, kreisfreie Stadt;7140;2858;387;60;344;1721;3308
+2020;05119;      Oberhausen, kreisfreie Stadt;11917;4187;803;162;963;2132;5565
+2020;05120;      Remscheid, kreisfreie Stadt;4741;1705;262;79;444;980;1690
+2020;05122;      Solingen, kreisfreie Stadt;7091;2590;368;183;884;1225;2418
+2020;05124;      Wuppertal, kreisfreie Stadt;18222;7836;872;409;2002;2953;6417
+2020;05154;      Kleve, Kreis;9145;2529;572;164;897;2024;3502
+2020;05158;      Mettmann, Kreis;17504;5767;1115;201;1247;4247;6188
+2020;05162;      Rhein-Kreis Neuss;14341;4684;1033;163;1049;2865;4814
+2020;05166;      Viersen, Kreis;9705;2183;845;113;777;2359;3351
+2020;05170;      Wesel, Kreis;16099;3982;1426;248;1425;3409;6130
+2020;053;    Köln, Regierungsbezirk;178272;58492;11793;2664;15453;35226;65538
+2020;05314;      Bonn, kreisfreie Stadt;13092;4660;985;152;956;2452;4702
+2020;05315;      Köln, kreisfreie Stadt;55194;21545;3042;719;4012;9325;21577
+2020;05316;      Leverkusen, kreisfreie Stadt;7158;2526;555;98;596;1380;2523
+2020;05334;      Städteregion Aachen (einschl. Stadt Aachen);24073;7805;1288;327;2029;4747;8835
+2020;05334002;      Aachen, krfr. Stadt;11662;4358;537;146;919;2219;4588
+2020;05354;      Aachen, Kreis;-;-;-;-;-;-;-
+2020;05358;      Düren, Kreis;10089;2752;554;222;1155;1777;3840
+2020;05362;      Rhein-Erft-Kreis;17923;5957;1385;304;1670;3798;6464
+2020;05366;      Euskirchen, Kreis;6124;1316;422;102;595;1495;2109
+2020;05370;      Heinsberg, Kreis;7867;1702;520;139;810;1747;2355
+2020;05374;      Oberbergischer Kreis;9061;2323;698;167;1025;2211;3301
+2020;05378;      Rheinisch-Bergischer Kreis;9273;2513;711;122;810;2261;3660
+2020;05382;      Rhein-Sieg-Kreis;18420;5392;1634;312;1796;4033;6172
+2020;055;    Münster, Regierungsbezirk;94395;30258;6478;1789;9245;18431;36618
+2020;05512;      Bottrop, kreisfreie Stadt;4980;1548;353;75;455;854;1695
+2020;05513;      Gelsenkirchen, kreisfreie Stadt;19357;8077;1267;415;1867;2985;7493
+2020;05515;      Münster, kreisfreie Stadt;8923;2563;611;144;810;1662;3287
+2020;05554;      Borken, Kreis;8703;2345;687;209;984;2079;2849
+2020;05558;      Coesfeld, Kreis;3888;921;293;78;430;933;995
+2020;05562;      Recklinghausen, Kreis;28866;8699;1712;465;2468;5767;13375
+2020;05566;      Steinfurt, Kreis;11641;3466;982;248;1421;2367;3871
+2020;05570;      Warendorf, Kreis;8037;2639;573;155;810;1784;3054
+2020;057;    Detmold, Regierungsbezirk;68247;19669;4412;1175;7161;14305;23793
+2020;05711;      Bielefeld, kreisfreie Stadt;15217;5154;892;238;1503;2817;6072
+2020;05754;      Gütersloh, Kreis;9799;3322;611;132;1014;1924;2999
+2020;05758;      Herford, Kreis;8222;2191;693;136;824;1984;2726
+2020;05762;      Höxter, Kreis;3223;572;260;57;352;842;885
+2020;05766;      Lippe, Kreis;11899;3315;648;239;1339;2302;4743
+2020;05770;      Minden-Lübbecke, Kreis;9675;2501;534;219;1181;1897;3137
+2020;05774;      Paderborn, Kreis;10213;2613;774;154;948;2540;3230
+2020;059;    Arnsberg, Regierungsbezirk;157846;52498;13454;2449;14154;30678;58292
+2020;05911;      Bochum, kreisfreie Stadt;18193;6043;1563;234;1411;3640;7047
+2020;05913;      Dortmund, kreisfreie Stadt;36213;14030;2992;612;3309;5841;14434
+2020;05914;      Hagen, kreisfreie Stadt;11888;5014;916;203;1072;2175;4861
+2020;05915;      Hamm, kreisfreie Stadt;8512;2872;613;137;751;1280;3713
+2020;05916;      Herne, kreisfreie Stadt;9166;3582;777;161;891;1445;3269
+2020;05954;      Ennepe-Ruhr-Kreis;11453;3418;1023;153;918;2291;3644
+2020;05958;      Hochsauerlandkreis;6848;1692;586;110;717;1602;2386
+2020;05962;      Märkischer Kreis;17265;5514;1589;268;1593;4062;6333
+2020;05966;      Olpe, Kreis;3410;942;337;60;355;795;866
+2020;05970;      Siegen-Wittgenstein, Kreis;8758;2614;731;167;998;1892;2585
+2020;05974;      Soest, Kreis;9984;2393;896;143;932;2383;3378
+2020;05978;      Unna, Kreis;16155;4384;1432;201;1208;3272;5776
+2020;06;  Hessen;184955;71700;12115;3781;19033;34704;52826
+2020;064;    Darmstadt, Regierungsbezirk;124071;53573;7030;2626;12424;22608;36337
+2020;06411;      Darmstadt, kreisfreie Stadt;5482;2389;259;107;580;920;1668
+2020;06412;      Frankfurt am Main, kreisfreie Stadt;28019;14158;1241;448;2400;4342;6937
+2020;06413;      Offenbach am Main, kreisfreie Stadt;7520;4189;427;197;686;1332;2619
+2020;06414;      Wiesbaden, Landeshauptstadt, kreisfreie Stadt;11321;4753;556;301;1213;1901;4360
+2020;06431;      Bergstraße, Landkreis;6062;2108;417;71;471;1365;1623
+2020;06432;      Darmstadt-Dieburg, Landkreis;8329;3154;531;141;854;1823;3411
+2020;06433;      Groß-Gerau, Landkreis;9002;4220;555;197;937;1512;2232
+2020;06434;      Hochtaunuskreis;5447;2268;302;161;601;1146;1918
+2020;06435;      Main-Kinzig-Kreis;12131;4634;836;380;1513;2146;3341
+2020;06436;      Main-Taunus-Kreis;5612;2196;353;106;549;1093;1629
+2020;06437;      Odenwaldkreis;2576;934;150;54;312;610;835
+2020;06438;      Offenbach, Landkreis;10361;4403;619;234;1075;1996;2224
+2020;06439;      Rheingau-Taunus-Kreis;4534;1730;198;92;429;941;1572
+2020;06440;      Wetteraukreis;7676;2439;588;138;805;1480;1968
+2020;065;    Gießen, Regierungsbezirk;29080;8981;2601;531;3056;5622;8748
+2020;06531;      Gießen, Landkreis;8711;2784;807;138;829;1522;2912
+2020;06532;      Lahn-Dill-Kreis;7734;2517;708;136;782;1618;2554
+2020;06533;      Limburg-Weilburg, Landkreis;4459;1450;323;80;463;838;1087
+2020;06534;      Marburg-Biedenkopf, Landkreis;5847;1742;526;134;731;1063;1619
+2020;06535;      Vogelsbergkreis;2329;489;237;44;252;582;577
+2020;066;    Kassel, Regierungsbezirk;31804;9146;2484;624;3553;6474;7741
+2020;06611;      Kassel, kreisfreie Stadt;9092;3692;477;149;914;1438;2375
+2020;06631;      Fulda, Landkreis;4241;1235;356;84;528;807;752
+2020;06632;      Hersfeld-Rotenburg, Landkreis;2574;633;275;58;287;568;775
+2020;06633;      Kassel, Landkreis;5547;1312;448;117;648;1200;1495
+2020;06634;      Schwalm-Eder-Kreis;3896;850;307;80;436;856;834
+2020;06635;      Waldeck-Frankenberg, Landkreis;3557;846;341;79;399;917;790
+2020;06636;      Werra-Meißner-Kreis;2899;578;280;57;341;689;721
+2020;07;  Rheinland-Pfalz;117912;33221;6777;2550;12396;26227;32314
+2020;071;    Koblenz, Stat. Region;39249;9974;2161;820;4135;8845;10057
+2020;07111;      Koblenz, kreisfreie Stadt;4139;1404;185;69;418;705;1071
+2020;07131;      Ahrweiler, Landkreis;2928;878;144;54;306;687;609
+2020;07132;      Altenkirchen (Westerwald), Landkreis;3886;741;264;78;422;938;1078
+2020;07133;      Bad Kreuznach, Landkreis;5404;1473;263;146;627;1173;1873
+2020;07134;      Birkenfeld, Landkreis;2869;592;191;74;312;678;1050
+2020;07135;      Cochem-Zell, Landkreis;1341;304;67;35;147;327;286
+2020;07137;      Mayen-Koblenz, Landkreis;4269;1027;213;94;472;963;844
+2020;07138;      Neuwied, Landkreis;5407;1476;315;105;533;1208;1539
+2020;07140;      Rhein-Hunsrück-Kreis;2464;526;153;54;253;656;582
+2020;07141;      Rhein-Lahn-Kreis;2440;611;104;34;214;532;357
+2020;07143;      Westerwaldkreis;4103;941;261;79;431;979;768
+2020;072;    Trier, Stat. Region;11854;2813;738;307;1469;2645;2640
+2020;07211;      Trier, kreisfreie Stadt;3962;1150;189;115;560;661;883
+2020;07231;      Bernkastel-Wittlich, Landkreis;2296;509;164;54;252;605;444
+2020;07232;      Eifelkreis Bitburg-Prüm;1628;400;108;45;193;405;341
+2020;07233;      Vulkaneifel, Landkreis;1386;226;102;33;157;333;397
+2020;07235;      Trier-Saarburg, Landkreis;2581;528;174;60;308;641;575
+2020;073;    Rheinhessen-Pfalz, Stat. Region;66809;20435;3878;1423;6792;14738;19617
+2020;07311;      Frankenthal (Pfalz), kreisfreie Stadt;1871;688;87;42;170;393;600
+2020;07312;      Kaiserslautern, kreisfreie Stadt;5188;1569;264;99;490;1010;1663
+2020;07313;      Landau in der Pfalz, kreisfreie Stadt;1560;466;79;36;172;296;473
+2020;07314;      Ludwigshafen am Rhein, kreisfreie Stadt;9044;4210;447;173;849;1566;2931
+2020;07315;      Mainz, kreisfreie Stadt;7490;3236;356;140;725;1189;2105
+2020;07316;      Neustadt an der Weinstraße, kreisfreie Stadt;1818;500;90;49;203;356;534
+2020;07317;      Pirmasens, kreisfreie Stadt;2447;474;144;54;250;578;957
+2020;07318;      Speyer, kreisfreie Stadt;1806;529;121;33;157;407;613
+2020;07319;      Worms, kreisfreie Stadt;3817;1480;127;97;430;664;1072
+2020;07320;      Zweibrücken, kreisfreie Stadt;1244;312;60;22;113;278;377
+2020;07331;      Alzey-Worms, Landkreis;3197;758;201;88;379;779;788
+2020;07332;      Bad Dürkheim, Landkreis;3156;623;222;70;317;916;910
+2020;07333;      Donnersbergkreis;2361;421;179;58;254;608;694
+2020;07334;      Germersheim, Landkreis;3369;980;218;62;371;797;768
+2020;07335;      Kaiserslautern, Landkreis;3112;608;227;78;336;756;906
+2020;07336;      Kusel, Landkreis;1784;214;156;32;180;552;560
+2020;07337;      Südliche Weinstraße, Landkreis;2694;641;171;52;285;742;700
+2020;07338;      Rhein-Pfalz-Kreis;3758;1015;281;63;332;1127;1121
+2020;07339;      Mainz-Bingen, Landkreis;4945;1459;270;139;581;1031;1245
+2020;07340;      Südwestpfalz, Landkreis;2149;253;178;36;198;692;599
+2020;08;  Baden-Württemberg, Land;259940;92303;16228;3929;25517;56086;60936
+2020;081;    Stuttgart, Regierungsbezirk;98609;38364;5716;1424;9487;21185;23926
+2020;08111;      Stuttgart, Landeshauptstadt, Stadtkreis;18616;8382;837;267;1520;2969;5918
+2020;08115;      Böblingen, Landkreis;8227;3498;387;100;673;1887;1736
+2020;08116;      Esslingen, Landkreis;12555;5275;615;171;1263;2640;3155
+2020;08117;      Göppingen, Landkreis;6851;2587;355;114;765;1538;1423
+2020;08118;      Ludwigsburg, Landkreis;11142;4486;799;153;1078;2599;2437
+2020;08119;      Rems-Murr-Kreis, Landkreis;10395;4106;575;127;963;2391;2275
+2020;08121;      Heilbronn, Universitätsstadt, Stadtkreis;4384;2055;281;73;467;773;915
+2020;08125;      Heilbronn, Landkreis;7548;2636;540;109;777;1704;1743
+2020;08126;      Hohenlohekreis, Landkreis;2144;570;192;38;228;605;498
+2020;08127;      Schwäbisch Hall, Landkreis;3873;1007;290;75;434;972;851
+2020;08128;      Main-Tauber-Kreis, Landkreis;2717;739;334;46;294;677;543
+2020;08135;      Heidenheim, Landkreis;3615;1186;214;50;372;806;797
+2020;08136;      Ostalbkreis, Landkreis;6541;1838;298;101;655;1626;1634
+2020;082;    Karlsruhe, Regierungsbezirk;71693;24720;5600;982;6358;15953;18216
+2020;08211;      Baden-Baden, Stadtkreis;1654;653;98;21;129;414;395
+2020;08212;      Karlsruhe, Stadtkreis;8408;2599;532;138;762;1621;2040
+2020;08215;      Karlsruhe, Landkreis;9208;2882;623;161;1039;2234;1723
+2020;08216;      Rastatt, Landkreis;5163;1696;451;80;503;1297;1106
+2020;08221;      Heidelberg, Stadtkreis;3874;1228;318;43;266;732;1147
+2020;08222;      Mannheim, Stadtkreis;12365;5224;882;70;635;2217;4188
+2020;08225;      Neckar-Odenwald-Kreis, Landkreis;3106;756;434;49;347;893;817
+2020;08226;      Rhein-Neckar-Kreis, Landkreis;13128;4250;1322;188;1166;3147;3514
+2020;08231;      Pforzheim, Stadtkreis;4964;2385;292;73;470;874;1241
+2020;08235;      Calw, Landkreis;3372;1051;202;51;351;870;652
+2020;08236;      Enzkreis, Landkreis;3767;1263;253;69;436;939;730
+2020;08237;      Freudenstadt, Landkreis;2683;734;193;38;254;715;663
+2020;083;    Freiburg, Regierungsbezirk;52373;16814;2944;870;5452;10943;11341
+2020;08311;      Freiburg im Breisgau, Stadtkreis;7195;2267;389;88;523;1234;2086
+2020;08315;      Breisgau-Hochschwarzwald, Landkreis;5030;1450;319;75;488;1112;1077
+2020;08316;      Emmendingen, Landkreis;3123;945;176;38;311;699;567
+2020;08317;      Ortenaukreis, Landkreis;9282;2838;584;134;954;2050;2201
+2020;08325;      Rottweil, Landkreis;2742;860;194;62;375;619;444
+2020;08326;      Schwarzwald-Baar-Kreis, Landkreis;5393;1891;286;103;657;1090;1014
+2020;08327;      Tuttlingen, Landkreis;3147;1125;149;81;426;596;645
+2020;08335;      Konstanz, Landkreis;6797;2315;367;113;679;1365;1237
+2020;08336;      Lörrach, Landkreis;5984;1925;309;102;614;1315;1233
+2020;08337;      Waldshut, Landkreis;3680;1198;171;74;424;864;837
+2020;084;    Tübingen, Regierungsbezirk;37266;12405;1968;653;4220;8005;7454
+2020;08415;      Reutlingen, Landkreis;7012;2806;383;103;736;1379;1725
+2020;08416;      Tübingen, Landkreis;4218;1441;259;51;411;871;898
+2020;08417;      Zollernalbkreis, Landkreis;4384;1192;326;84;488;1105;1123
+2020;08421;      Ulm, Stadtkreis;3076;1312;129;61;364;535;554
+2020;08425;      Alb-Donau-Kreis, Landkreis;3597;1246;133;76;462;854;672
+2020;08426;      Biberach, Landkreis;3185;986;172;62;424;613;565
+2020;08435;      Bodenseekreis, Landkreis;3868;1258;164;49;384;877;746
+2020;08436;      Ravensburg, Landkreis;5251;1511;272;111;635;1110;638
+2020;08437;      Sigmaringen, Landkreis;2676;653;132;56;317;662;533
+2020;09;  Bayern;275075;85708;24011;5612;28582;64492;52005
+2020;091;    Oberbayern, Regierungsbezirk;97648;36845;6659;1664;9028;21047;17199
+2020;09161;      Ingolstadt;3110;1109;252;69;368;699;709
+2020;09162;      München, Landeshauptstadt;42525;19738;2628;561;3036;7617;7748
+2020;09163;      Rosenheim;1853;738;149;35;205;387;339
+2020;09171;      Altötting, Landkreis;2153;572;170;58;255;530;457
+2020;09172;      Berchtesgadener Land, Landkreis;2208;684;169;35;209;522;431
+2020;09173;      Bad Tölz-Wolfratshausen, Landkreis;2002;605;139;34;195;518;287
+2020;09174;      Dachau, Landkreis;2488;909;194;48;284;563;268
+2020;09175;      Ebersberg, Landkreis;1968;593;150;35;185;503;274
+2020;09176;      Eichstätt, Landkreis;1506;431;113;45;226;360;161
+2020;09177;      Erding, Landkreis;2082;613;170;43;224;508;250
+2020;09178;      Freising, Landkreis;3085;1137;239;62;361;687;449
+2020;09179;      Fürstenfeldbruck, Landkreis;4072;1398;228;78;421;961;726
+2020;09180;      Garmisch-Partenkirchen, Landkreis;1702;509;121;26;168;484;269
+2020;09181;      Landsberg am Lech, Landkreis;2013;488;118;46;250;525;242
+2020;09182;      Miesbach, Landkreis;1593;429;129;26;149;491;288
+2020;09183;      Mühldorf a.Inn, Landkreis;2459;682;157;55;292;534;557
+2020;09184;      München, Landkreis;5824;2251;383;77;502;1315;1258
+2020;09185;      Neuburg-Schrobenhausen, Landkreis;1460;426;113;43;193;345;230
+2020;09186;      Pfaffenhofen a.d.Ilm, Landkreis;1719;471;119;45;223;427;187
+2020;09187;      Rosenheim, Landkreis;4293;983;319;97;502;1110;736
+2020;09188;      Starnberg, Landkreis;2226;734;135;32;199;586;366
+2020;09189;      Traunstein, Landkreis;3147;796;286;72;353;818;592
+2020;09190;      Weilheim-Schongau, Landkreis;2163;549;179;42;230;560;376
+2020;092;    Niederbayern, Regierungsbezirk;25802;6993;2163;650;2992;6575;4733
+2020;09261;      Landshut;2064;876;132;49;241;343;388
+2020;09262;      Passau;1608;579;76;35;198;322;327
+2020;09263;      Straubing;1548;500;148;50;209;296;319
+2020;09271;      Deggendorf, Landkreis;2313;514;213;55;248;633;341
+2020;09272;      Freyung-Grafenau, Landkreis;1437;176;155;23;134;518;224
+2020;09273;      Kelheim, Landkreis;2133;661;178;51;261;523;361
+2020;09274;      Landshut, Landkreis;2840;777;229;82;335;751;633
+2020;09275;      Passau, Landkreis;3881;855;308;86;404;1122;607
+2020;09276;      Regen, Landkreis;1615;335;159;43;180;459;259
+2020;09277;      Rottal-Inn, Landkreis;2488;672;200;74;308;665;612
+2020;09278;      Straubing-Bogen, Landkreis;1762;411;156;47;220;455;277
+2020;09279;      Dingolfing-Landau, Landkreis;2114;636;209;56;255;489;386
+2020;093;    Oberpfalz, Regierungsbezirk;21508;4839;2141;457;2457;5303;3941
+2020;09361;      Amberg;1270;296;103;33;155;277;285
+2020;09362;      Regensburg;3938;1342;285;66;412;628;663
+2020;09363;      Weiden i.d.OPf.;1366;356;127;27;159;269;327
+2020;09371;      Amberg-Sulzbach, Landkreis;1751;297;197;46;220;496;314
+2020;09372;      Cham, Landkreis;2331;385;282;49;262;663;319
+2020;09373;      Neumarkt i.d.OPf., Landkreis;1741;302;164;35;209;477;247
+2020;09374;      Neustadt a.d.Waldnaab, Landkreis;1806;253;235;36;208;531;444
+2020;09375;      Regensburg, Landkreis;2967;725;262;58;343;722;404
+2020;09376;      Schwandorf, Landkreis;2956;690;303;75;356;801;563
+2020;09377;      Tirschenreuth, Landkreis;1382;193;182;32;133;439;375
+2020;094;    Oberfranken, Regierungsbezirk;23677;4332;2818;523;2515;6586;4970
+2020;09461;      Bamberg;1922;523;152;29;190;373;428
+2020;09462;      Bayreuth;2098;471;293;45;226;458;383
+2020;09463;      Coburg;1338;322;132;31;176;311;343
+2020;09464;      Hof;1618;574;221;45;170;325;380
+2020;09471;      Bamberg, Landkreis;2361;290;265;54;264;737;371
+2020;09472;      Bayreuth, Landkreis;1952;200;244;37;177;637;411
+2020;09473;      Coburg, Landkreis;1872;231;207;48;219;543;429
+2020;09474;      Forchheim, Landkreis;1997;370;208;38;209;579;375
+2020;09475;      Hof, Landkreis;1866;287;219;43;202;582;335
+2020;09476;      Kronach, Landkreis;1468;178;204;36;164;471;282
+2020;09477;      Kulmbach, Landkreis;1580;203;237;23;123;504;407
+2020;09478;      Lichtenfels, Landkreis;1611;221;214;38;169;531;371
+2020;09479;      Wunsiedel i.Fichtelgebirge, Landkreis;1994;461;222;56;228;537;456
+2020;095;    Mittelfranken, Regierungsbezirk;43107;14824;4518;953;4506;9337;9434
+2020;09561;      Ansbach;1089;379;93;27;125;234;172
+2020;09562;      Erlangen;2648;903;320;39;222;558;873
+2020;09563;      Fürth;4354;1703;456;99;475;819;1230
+2020;09564;      Nürnberg;18911;8162;1840;425;1882;3424;4064
+2020;09565;      Schwabach;933;322;110;23;109;222;202
+2020;09571;      Ansbach, Landkreis;2984;636;332;76;338;878;605
+2020;09572;      Erlangen-Höchstadt, Landkreis;1950;431;206;40;191;517;349
+2020;09573;      Fürth, Landkreis;2135;434;286;35;204;560;503
+2020;09574;      Nürnberger Land, Landkreis;2824;694;329;59;311;707;508
+2020;09575;      Neustadt a.d.Aisch-Bad Windsheim, Landkreis;1496;340;152;46;215;348;247
+2020;09576;      Roth, Landkreis;1919;341;218;36;224;564;322
+2020;09577;      Weißenburg-Gunzenhausen, Landkreis;1863;480;175;49;209;507;359
+2020;096;    Unterfranken, Regierungsbezirk;26053;6487;2429;577;2905;6593;5110
+2020;09661;      Aschaffenburg;2456;977;208;52;277;466;490
+2020;09662;      Schweinfurt;1989;703;170;37;191;376;533
+2020;09663;      Würzburg;3136;902;244;52;314;618;688
+2020;09671;      Aschaffenburg, Landkreis;3365;880;287;78;380;832;643
+2020;09672;      Bad Kissingen, Landkreis;2035;348;218;51;208;633;514
+2020;09673;      Rhön-Grabfeld, Landkreis;1427;199;168;33;179;425;297
+2020;09674;      Haßberge, Landkreis;1653;221;176;49;199;517;303
+2020;09675;      Kitzingen, Landkreis;1435;334;150;40;185;385;188
+2020;09676;      Miltenberg, Landkreis;2607;753;212;61;320;649;454
+2020;09677;      Main-Spessart, Landkreis;1876;406;216;46;225;524;238
+2020;09678;      Schweinfurt, Landkreis;1859;304;186;39;192;552;374
+2020;09679;      Würzburg, Landkreis;2216;460;195;40;234;617;390
+2020;097;    Schwaben, Regierungsbezirk;37281;11389;3283;788;4178;9053;6618
+2020;09761;      Augsburg;10394;4190;752;231;1101;1975;2349
+2020;09762;      Kaufbeuren;1109;306;129;30;134;273;324
+2020;09763;      Kempten (Allgäu);1626;501;136;33;185;353;246
+2020;09764;      Memmingen;1074;432;72;23;142;238;182
+2020;09771;      Aichach-Friedberg, Landkreis;2022;434;225;47;224;557;313
+2020;09772;      Augsburg, Landkreis;4314;1085;413;90;466;1179;705
+2020;09773;      Dillingen a.d.Donau, Landkreis;1402;350;153;26;164;372;192
+2020;09774;      Günzburg, Landkreis;1996;574;222;45;249;510;319
+2020;09775;      Neu-Ulm, Landkreis;3327;1058;287;54;368;835;384
+2020;09776;      Lindau (Bodensee), Landkreis;1462;460;116;30;155;365;205
+2020;09777;      Ostallgäu, Landkreis;2322;564;205;47;251;675;408
+2020;09778;      Unterallgäu, Landkreis;2049;494;167;48;267;560;324
+2020;09779;      Donau-Ries, Landkreis;1725;417;179;39;215;457;241
+2020;09780;      Oberallgäu, Landkreis;2458;524;227;45;259;704;426
+2020;10;  Saarland;38364;11350;2131;638;3314;7915;12197
+2020;10041;      Saarbrücken, Regionalverband;18034;6300;929;312;1597;3173;6178
+2020;10041100;      Saarbrücken, Landeshauptstadt;11646;4251;542;164;916;1969;3985
+2020;10042;      Merzig-Wadern, Landkreis;2658;594;157;79;299;636;693
+2020;10043;      Neunkirchen, Landkreis;5647;1508;295;121;610;1171;1753
+2020;10044;      Saarlouis, Landkreis;5953;1481;372;42;336;1328;1840
+2020;10045;      Saarpfalz-Kreis;4235;1125;260;67;358;1111;1322
+2020;10046;      St. Wendel, Landkreis;1838;343;118;17;114;496;411
+2020;11;  Berlin;192644;68444;8175;4042;16567;30771;47345
+2020;11001001;      Berlin-Mitte;.;.;.;.;.;.;.
+2020;11002002;      Berlin-Friedrichshain-Kreuzberg;.;.;.;.;.;.;.
+2020;11003003;      Berlin-Pankow;.;.;.;.;.;.;.
+2020;11004004;      Berlin-Charlottenburg-Wilmersdorf;.;.;.;.;.;.;.
+2020;11005005;      Berlin-Spandau;.;.;.;.;.;.;.
+2020;11006006;      Berlin-Steglitz-Zehlendorf;.;.;.;.;.;.;.
+2020;11007007;      Berlin-Tempelhof-Schöneberg;.;.;.;.;.;.;.
+2020;11008008;      Berlin-Neukölln;.;.;.;.;.;.;.
+2020;11009009;      Berlin-Treptow-Köpenick;.;.;.;.;.;.;.
+2020;11010010;      Berlin-Marzahn-Hellersdorf;.;.;.;.;.;.;.
+2020;11011011;      Berlin-Lichtenberg;.;.;.;.;.;.;.
+2020;11012012;      Berlin-Reinickendorf;.;.;.;.;.;.;.
+2020;12;  Brandenburg;82491;10582;4346;1497;6833;21831;29201
+2020;12051;      Brandenburg an der Havel, kreisfreie Stadt;2995;485;133;66;278;631;1044
+2020;12052;      Cottbus, kreisfreie Stadt;4190;749;243;56;282;1087;1344
+2020;12053;      Frankfurt (Oder), kreisfreie Stadt;2462;523;132;38;223;561;765
+2020;12054;      Potsdam, kreisfreie Stadt;5757;1484;294;76;437;1009;1652
+2020;12060;      Barnim, Landkreis;5655;639;320;125;567;1373;1882
+2020;12061;      Dahme-Spreewald, Landkreis;3899;472;217;42;198;1093;1079
+2020;12062;      Elbe-Elster, Landkreis;3511;258;194;42;204;1189;1304
+2020;12063;      Havelland, Landkreis;5046;757;281;114;533;1243;1804
+2020;12064;      Märkisch-Oderland, Landkreis;6063;509;346;140;538;1809;1927
+2020;12065;      Oberhavel, Landkreis;6039;838;368;141;595;1402;2118
+2020;12066;      Oberspreewald-Lausitz, Landkreis;4386;298;231;49;236;1453;1764
+2020;12067;      Oder-Spree, Landkreis;6072;814;238;131;567;1644;2699
+2020;12068;      Ostprignitz-Ruppin, Landkreis;3383;306;207;71;330;867;1032
+2020;12069;      Potsdam-Mittelmark, Landkreis;4986;620;254;86;405;1420;1695
+2020;12070;      Prignitz, Landkreis;3035;326;158;61;271;796;1102
+2020;12071;      Spree-Neiße, Landkreis;3892;309;210;35;193;1255;1440
+2020;12072;      Teltow-Fläming, Landkreis;4696;627;205;105;449;1214;1348
+2020;12073;      Uckermark, Landkreis;6422;570;316;121;528;1787;3201
+2020;13;  Mecklenburg-Vorpommern;63850;6218;4143;1516;6121;16207;21188
+2020;13001;      Greifswald, Hansestadt,  kreisfreie Stadt;-;-;-;-;-;-;-
+2020;13002;      Neubrandenburg, Stadt,  kreisfreie Stadt;-;-;-;-;-;-;-
+2020;13003;      Rostock, Hanse- und Universitätsstadt, kreisfreie Stadt;8222;1231;416;173;854;1532;2398
+2020;13004;      Schwerin, Landeshauptstadt, kreisfreie Stadtk;4650;1015;278;122;555;803;1555
+2020;13005;      Stralsund, Hansestadt,  kreisfreie Stadt;-;-;-;-;-;-;-
+2020;13006;      Wismar, Hansestadt,  kreisfreie Stadt;-;-;-;-;-;-;-
+2020;13051;       Bad Doberan, Landkreis;-;-;-;-;-;-;-
+2020;13052;      Landkreis Demmin;-;-;-;-;-;-;-
+2020;13053;      Güstrow, Landkreis;-;-;-;-;-;-;-
+2020;13054;      Landkreis Ludwigslust;-;-;-;-;-;-;-
+2020;13055;      Mecklenburg-Strelitz, Landkreis;-;-;-;-;-;-;-
+2020;13056;      Landkreis Müritz;-;-;-;-;-;-;-
+2020;13057;      Nordvorpommern, Landkreis;-;-;-;-;-;-;-
+2020;13058;      Landkreis Nordwestmecklenburg;-;-;-;-;-;-;-
+2020;13059;      Ostvorpommern, Landkreis;-;-;-;-;-;-;-
+2020;13060;      Landkreis Parchim;-;-;-;-;-;-;-
+2020;13061;      Rügen, Landkreis;-;-;-;-;-;-;-
+2020;13062;      Landkreis Uecker-Randow;-;-;-;-;-;-;-
+2020;13071;      Mecklenburgische Seenplatte, Landkreis;11731;794;1058;277;1109;3213;4682
+2020;13072;      Landkreis Rostock;6141;466;277;140;530;1686;1972
+2020;13073;      Vorpommern-Rügen, Landkreis;10471;807;587;257;895;2941;2692
+2020;13074;      Landkreis Nordwestmecklenburg;5309;428;341;135;498;1399;1910
+2020;13075;       Vorpommern-Greifswald, Landkreis;10492;853;659;245;1005;2771;3777
+2020;13076;      Landkreis Ludwigslust-Parchim;6834;624;527;168;676;1862;2203
+2020;14;  Sachsen;128669;18715;8239;2539;11536;34111;41303
+2020;141;    Chemnitz, Regierungsbezirk;-;-;-;-;-;-;-
+2020;14161;      Chemnitz, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14166;      Plauen, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14167;      Zwickau, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14171;      Annaberg, Landkreis;-;-;-;-;-;-;-
+2020;14173;      Chemnitzer Land, Landkreis;-;-;-;-;-;-;-
+2020;14177;      Freiberg, Landkreis;-;-;-;-;-;-;-
+2020;14178;      Vogtlandkreis;-;-;-;-;-;-;-
+2020;14181;      Mittlerer Erzgebirgskreis;-;-;-;-;-;-;-
+2020;14182;      Mittweida, Landkreis;-;-;-;-;-;-;-
+2020;14188;      Stollberg, Landkreis;-;-;-;-;-;-;-
+2020;14191;      Aue-Schwarzenberg, Landkreis;-;-;-;-;-;-;-
+2020;14193;      Zwickauer Land, Landkreis;-;-;-;-;-;-;-
+2020;142;    Dresden, Regierungsbezirk;-;-;-;-;-;-;-
+2020;14262;      Dresden, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14263;      Görlitz, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14264;      Hoyerswerda, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14272;      Bautzen, Landkreis;-;-;-;-;-;-;-
+2020;14280;      Meißen, Landkreis;-;-;-;-;-;-;-
+2020;14284;      Niederschlesischer Oberlausitzkreis;-;-;-;-;-;-;-
+2020;14285;      Riesa-Großenhain, Landkreis;-;-;-;-;-;-;-
+2020;14286;      Löbau-Zittau, Landkreis;-;-;-;-;-;-;-
+2020;14287;      Sächsische Schweiz, Landkreis;-;-;-;-;-;-;-
+2020;14290;      Weißeritzkreis;-;-;-;-;-;-;-
+2020;14292;      Kamenz, Landkreis;-;-;-;-;-;-;-
+2020;143;    Leipzig, Regierungsbezirk;-;-;-;-;-;-;-
+2020;14365;      Leipzig, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;14374;      Delitzsch, Landkreis;-;-;-;-;-;-;-
+2020;14375;      Döbeln, Landkreis;-;-;-;-;-;-;-
+2020;14379;      Leipziger Land, Landkreis;-;-;-;-;-;-;-
+2020;14383;      Muldentalkreis;-;-;-;-;-;-;-
+2020;14389;      Torgau-Oschatz, Landkreis;-;-;-;-;-;-;-
+2020;145;    Chemnitz, Stat. Region;39991;4813;2810;899;3827;11405;12777
+2020;14511;      Chemnitz, Stadt;9248;1954;656;241;1028;2175;2844
+2020;14521;      Erzgebirgskreis;8214;490;591;197;733;2519;2714
+2020;14522;      Mittelsachsen, Landkreis;8293;646;566;165;740;2629;3052
+2020;14523;      Vogtlandkreis;6198;856;422;145;602;1703;1721
+2020;14524;      Zwickau, Landkreis;8038;867;575;152;724;2380;2446
+2020;146;    Dresden, Stat. Region;50335;7122;3415;882;4134;14277;17562
+2020;14612;      Dresden, Stadt;18587;4250;1171;377;1813;3664;5629
+2020;14625;      Bautzen, Landkreis;8202;568;632;148;602;2825;3194
+2020;14626;      Görlitz, Landkreis;10075;1126;615;154;738;3488;4234
+2020;14627;      Meißen, Landkreis;7211;637;607;84;443;2382;2518
+2020;14628;      Sächsische Schweiz-Osterzgebirge, Landkreis;6260;542;391;119;539;1918;1987
+2020;147;    Leipzig, Stat. Region;38343;6781;2013;759;3575;8429;10964
+2020;14713;      Leipzig, Stadt;23840;5435;1170;461;2329;4087;5742
+2020;14729;      Leipzig, Landkreis;7375;605;481;137;605;2111;2540
+2020;14730;      Nordsachsen, Landkreis;7128;741;362;161;641;2231;2683
+2020;15;  Sachsen-Anhalt;86110;10794;3969;1703;7943;20672;28886
+2020;15001;      Dessau-Roßlau, kreisfreie Stadt;3274;500;196;60;321;782;1100
+2020;15002;      Halle (Saale), kreisfreie Stadt;10812;2695;492;233;1146;1812;3150
+2020;15003;      Magdeburg, kreisfreie Stadt;11277;2601;388;195;1080;2150;3462
+2020;15081;      Altmarkkreis Salzwedel;2997;255;119;65;299;728;1138
+2020;15082;      Anhalt-Bitterfeld, Landkreis;6022;424;310;147;559;1654;2208
+2020;15083;      Börde, Landkreis;5058;398;297;85;469;1366;1472
+2020;15084;      Burgenlandkreis;6389;633;284;141;612;1637;2283
+2020;15085;      Harz, Landkreis;6420;286;271;111;597;1602;1691
+2020;15086;      Jerichower Land, Landkreis;3381;328;164;51;252;1024;1242
+2020;15087;      Mansfeld-Südharz, Landkreis;6443;530;279;151;637;1671;2720
+2020;15088;      Saalekreis;6561;713;333;151;643;1584;2436
+2020;15089;      Salzlandkreis;7900;543;366;112;557;2021;2683
+2020;15090;      Stendal, Landkreis;5118;434;228;104;399;1359;1812
+2020;15091;      Wittenberg, Landkreis;4458;456;242;96;371;1282;1489
+2020;151;    Dessau, Stat. Region;-;-;-;-;-;-;-
+2020;15101;      Dessau, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;15151;      Anhalt-Zerbst, Kreis;-;-;-;-;-;-;-
+2020;15153;      Bernburg, Kreis;-;-;-;-;-;-;-
+2020;15154;      Bitterfeld, Kreis;-;-;-;-;-;-;-
+2020;15159;      Köthen, Kreis;-;-;-;-;-;-;-
+2020;15171;      Wittenberg, Kreis;-;-;-;-;-;-;-
+2020;152;    Halle, Stat. Region;-;-;-;-;-;-;-
+2020;15202;      Halle (Saale), kreisfreie Stadt;-;-;-;-;-;-;-
+2020;15256;      Burgenlandkreis;-;-;-;-;-;-;-
+2020;15260;      Mansfelder Land, Kreis;-;-;-;-;-;-;-
+2020;15261;      Merseburg-Querfurt, Kreis;-;-;-;-;-;-;-
+2020;15265;      Saalkreis;-;-;-;-;-;-;-
+2020;15266;      Sangerhausen, Kreis;-;-;-;-;-;-;-
+2020;15268;      Weißenfels, Kreis;-;-;-;-;-;-;-
+2020;153;    Magdeburg, Stat. Region;-;-;-;-;-;-;-
+2020;15303;      Magdeburg, kreisfreie Stadt;-;-;-;-;-;-;-
+2020;15352;      Aschersleben-Staßfurt, Kreis;-;-;-;-;-;-;-
+2020;15355;      Bördekreis;-;-;-;-;-;-;-
+2020;15357;      Halberstadt, Kreis;-;-;-;-;-;-;-
+2020;15358;      Jerichower Land, Kreis;-;-;-;-;-;-;-
+2020;15362;      Ohrekreis;-;-;-;-;-;-;-
+2020;15363;      Stendal, Kreis;-;-;-;-;-;-;-
+2020;15364;      Quedlinburg, Kreis;-;-;-;-;-;-;-
+2020;15367;      Schönebeck, Kreis;-;-;-;-;-;-;-
+2020;15369;      Wernigerode, Kreis;-;-;-;-;-;-;-
+2020;15370;      Altmarkkreis Salzwedel, Kreis;-;-;-;-;-;-;-
+2020;16;  Thüringen;66678;8644;4994;1408;6078;17521;20225
+2020;16051;      Erfurt, kreisfreie Stadt;7487;1739;500;143;661;1530;1898
+2020;16052;      Gera, kreisfreie Stadt;3994;724;292;94;389;914;1297
+2020;16053;      Jena, kreisfreie Stadt;3279;831;180;61;315;641;1048
+2020;16054;      Suhl, kreisfreie Stadt;1091;143;92;19;114;292;325
+2020;16055;      Weimar, kreisfreie Stadt;2092;368;126;38;173;428;580
+2020;16056;      Eisenach, kreisfreie Stadt;1677;340;165;56;192;399;465
+2020;16061;      Eichsfeld, Kreis;2449;253;214;33;195;706;739
+2020;16062;      Nordhausen, Kreis;3293;419;215;91;351;732;1094
+2020;16063;      Wartburgkreis;3138;227;223;80;284;907;928
+2020;16064;      Unstrut-Hainich-Kreis;4081;352;284;72;350;1208;1433
+2020;16065;      Kyffhäuserkreis;3078;179;242;33;205;874;1139
+2020;16066;      Schmalkalden-Meiningen, Kreis;3351;324;291;87;331;944;997
+2020;16067;      Gotha, Kreis;4358;629;389;112;497;1072;1161
+2020;16068;      Sömmerda, Kreis;2357;156;187;54;225;648;776
+2020;16069;      Hildburghausen, Kreis;1429;119;159;24;108;423;350
+2020;16070;      Ilm-Kreis;3142;379;261;68;282;766;915
+2020;16071;      Weimarer Land, Kreis;2025;218;123;42;172;553;559
+2020;16072;      Sonneberg, Kreis;1408;190;133;37;155;387;297
+2020;16073;      Saalfeld-Rudolstadt, Kreis;3111;239;230;58;260;1014;991
+2020;16074;      Saale-Holzland-Kreis;1984;145;132;49;168;588;614
+2020;16075;      Saale-Orla-Kreis;2090;145;150;40;168;738;648
+2020;16076;      Greiz, Kreis;2590;156;212;50;212;892;804
+2020;16077;      Altenburger Land, Kreis;3176;368;196;67;271;864;1168
