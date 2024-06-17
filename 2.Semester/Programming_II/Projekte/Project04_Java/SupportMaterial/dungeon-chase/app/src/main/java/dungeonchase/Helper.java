@@ -19,7 +19,7 @@ public class Helper{
     return attributes[random.nextInt(attributes.length)] + " " + main;
   }
 
-  /* ### Character 
+  //### Character 
   @SuppressWarnings("unchecked")
   public static Character[][] fillGrid(
       int amount,
@@ -39,7 +39,7 @@ public class Helper{
 
     return grid;
   } 
-  */
+  
 
 
 }

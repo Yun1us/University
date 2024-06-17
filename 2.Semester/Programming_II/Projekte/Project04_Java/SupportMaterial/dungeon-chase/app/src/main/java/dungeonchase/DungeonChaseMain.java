@@ -85,7 +85,7 @@ public class DungeonChaseMain extends Application {
 
       receiveInput = false;
 
-      /* ### updatePlayer 
+      // ### updatePlayer 
       Direction movement = 
         switch (keyEvent.getCode()){
           case W, UP -> Direction.NORTH;
@@ -99,7 +99,7 @@ public class DungeonChaseMain extends Application {
       if (movement == Direction.NONE)
         return;
 
-      grid.updatePlayer(movement);*/
+      grid.updatePlayer(movement);//
       drawGrid();
 
       timer.schedule(
@@ -108,7 +108,7 @@ public class DungeonChaseMain extends Application {
             public void run(){
 
               
-              // grid.updateOthers(movement); // ### updateOthers
+               grid.updateOthers(movement); // ### updateOthers
 
               drawGrid();
               receiveInput = true;
@@ -125,7 +125,7 @@ public class DungeonChaseMain extends Application {
       if (!grid.getTreasureChest().isAlive()){
         alert = new Alert(AlertType.INFORMATION, "YOU WON!");
       } else */
-      /* ### updateOthers 
+      // ### updateOthers 
       if (!grid.getPlayer().isAlive()){
         Character killer = grid.get(grid.getPlayerX(),grid.getPlayerY());
         alert = new Alert(AlertType.INFORMATION, "YOU DIED! You have been killed by " + (killer == null ? " unknown" : killer.getName() + "!"));
@@ -134,7 +134,7 @@ public class DungeonChaseMain extends Application {
 
       alert.showAndWait();
       Platform.exit();
-      System.exit(0);*/
+      System.exit(0);
     }
 
 
@@ -166,13 +166,13 @@ public class DungeonChaseMain extends Application {
             Image image = loadImage(String.format("floor-%02d.png", floorId));
             g.drawImage(image, screenX, screenY);
 
-            /* ### Character
+            // ### Character
             Character character = grid.get(x,y); 
             if (character != null){
               image = loadImage(character.getImage());
               g.drawImage(image, screenX, screenY);
             } 
-            */
+            
 
 
 
