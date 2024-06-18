@@ -19,24 +19,24 @@ public enum Direction {
         this.dy = dy;
     }
 
-    public int getDx() {
+    public int getDx() { //getter für dx 
         return dx;
     }
 
-    public int getDy() {
+    public int getDy() { //getter für dy
         return dy;
     }
 
-    public static Direction fromD(int dx, int dy) {
+    public static Direction fromD(int dx, int dy) { //Gibt für die Parameter die entsprechende Richtung zurück 
         for (Direction dir : values()) {
             if (dir.dx == dx && dir.dy == dy) {
                 return dir;
             }
         }
-        return NONE; 
+        throw new IllegalArgumentException("Ungültige Parameter: ()" +dx + "," + dy + ")"); 
     }
 
-    public Direction opposite(){
+    public Direction opposite(){ //Gibt die entgegengesetzen Parameter zurück 
         int dxx = dx;
         dxx = -dx;
         int dyy = dy;
@@ -44,7 +44,7 @@ public enum Direction {
         return fromD(dxx, dyy);
     }
 
-    public static Direction random4(){
+    public static Direction random4(){ //gibt einen zufälligen Wert aus den Himmelsrichtungen zurück 
         double random = Math.random()*4;
         if (random>0 && random<=1){
             return NORTH;

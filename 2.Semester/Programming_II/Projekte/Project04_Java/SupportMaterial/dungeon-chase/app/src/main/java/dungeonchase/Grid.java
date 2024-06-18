@@ -63,9 +63,9 @@ public class Grid {
 
           currentUnit.setLastUpdate(currentIteration);
           if (currentUnit instanceof Replicable) {
-            Direction directionOfRep = ((Replicable) currentUnit).replicationDirection(); // ask prof about typecasting
+            Direction directionOfRep = ((Replicable) currentUnit).replicationDirection(); 
             System.out.println(directionOfRep);
-            if ( directionOfRep != Direction.NONE) { // type casting --> dont fully understand but (This casts currentUnit to the Replicable interface. This cast is safe because we have already checked that currentUnit is an instance of Replicable)
+            if ( directionOfRep != Direction.NONE) { 
               Character newUnit = ((Replicable) currentUnit).generateReplication();
 
               int repX = gridIterationX + directionOfRep.getDx();

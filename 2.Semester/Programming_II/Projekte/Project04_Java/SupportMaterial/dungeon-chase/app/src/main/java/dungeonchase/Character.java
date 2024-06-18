@@ -11,8 +11,8 @@ public abstract class Character {
         }
         this.name = name;
     }
-
-    public String getName(){
+    //Setter und Getter Methoden
+    public String getName(){ 
         return this.name;
     }
 
@@ -33,7 +33,9 @@ public abstract class Character {
     }
 
     abstract String getImage();
-    abstract Direction update(Grid grid, int x, int y, Direction playerMovement);
+
+    abstract Direction update(Grid grid, int x, int y, Direction playerMovement); 
+
     public boolean collisionFrom(Character other){
         this.alive = false;
         return true;
