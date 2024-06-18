@@ -1,6 +1,6 @@
 package dungeonchase;
 
-public enum Direction {
+public enum Direction { //enum Konstanten
     NONE(0, 0),
     NORTH(0, 1),
     NORTH_EAST(1, 1),

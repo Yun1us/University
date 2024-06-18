@@ -62,16 +62,16 @@ public class Grid {
           Character currentUnit = grid[gridIterationX][gridIterationY];
 
           currentUnit.setLastUpdate(currentIteration);
-          if (currentUnit instanceof Replicable) {
-            Direction directionOfRep = ((Replicable) currentUnit).replicationDirection(); 
-            System.out.println(directionOfRep);
-            if ( directionOfRep != Direction.NONE) { 
-              Character newUnit = ((Replicable) currentUnit).generateReplication();
+          if (currentUnit instanceof Replicable) { //check ob currentunit replizierbar ist 
+            Direction directionOfRep = ((Replicable) currentUnit).replicationDirection();  //Gibt die Richtung der Replizierung an 
+            System.out.println(directionOfRep); //printet die Replizierung 
+            if ( directionOfRep != Direction.NONE) {  // wenn die Replizierungsrichtung nicht none ist wird ausgeführt
+              Character newUnit = ((Replicable) currentUnit).generateReplication(); // Replizierung wird erstellt 
 
-              int repX = gridIterationX + directionOfRep.getDx();
+              int repX = gridIterationX + directionOfRep.getDx(); // setzt die Koordinaten der Replication fest 
               int repY = gridIterationY + directionOfRep.getDy();
 
-              if (repX >= 0 && repX < GRID_WIDTH && repY >= 0 && repY < GRID_HEIGHT ) {
+              if (repX >= 0 && repX < GRID_WIDTH && repY >= 0 && repY < GRID_HEIGHT ) { //check ob die koordinaten im Game-Feld sind 
                 if (grid[repX][repY] == null) { 
                   grid[repX][repY] = newUnit;
                 }
@@ -97,7 +97,7 @@ public class Grid {
                 grid[hopeX][hopeY] = currentUnit;
               }
 
-              else if (target.collisionFrom(currentUnit)) { // wenn wir wollen dass die bombe sie auch töten können hier was ändern
+              else if (target.collisionFrom(currentUnit)) { 
                 grid[gridIterationX][gridIterationY] = null;
                 grid[hopeX][hopeY] = currentUnit;
               }

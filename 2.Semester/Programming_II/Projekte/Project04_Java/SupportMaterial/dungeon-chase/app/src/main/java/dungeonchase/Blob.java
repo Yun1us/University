@@ -6,14 +6,14 @@ public class Blob extends Character implements Replicable{
 
     public Blob(String name, double x) {
         super(name);
-        if (x>1 || x<0){
-            throw new IllegalArgumentException("probability must be higher then 0 and lower then 1");
+        if (x>=1 || x<=0){
+            throw new IllegalArgumentException("probability must be higher then, or 0 and lower then, or 1");
         }
         this.prob = x;
     }
 
     @Override
-    public Direction replicationDirection() {
+    public Direction replicationDirection() { //gibt die Direction dse Blobs an 
         if (Math.random() < prob) {
             return Direction.random4();
         }
@@ -23,7 +23,7 @@ public class Blob extends Character implements Replicable{
     }
 
     @Override
-    public Character generateReplication() {
+    public Character generateReplication() { //Liefert Kopie des Blobs
         return new Blob("Blob", prob);
     }
 

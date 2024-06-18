@@ -5,7 +5,7 @@ public abstract class Character {
     boolean alive = true;
     int lastUpdate = 0;
 
-    public Character(String name){
+    public Character(String name){ //Konstruktor 
         if (name==null || name.isEmpty()){
             throw new IllegalArgumentException("name must not be null");
         }
