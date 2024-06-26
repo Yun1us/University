@@ -1,17 +1,18 @@
-State,VotingPercentage
-Hamburg,80.0
-Bayern,75.0
-Schleswig-Holstein,72.0
-North Rhine-Westphalia,71.0
-Baden-Württemberg,70.0
-Rheinland-Pfalz,69.0
-Hesse,68.0
-Lower Saxony,67.0
-Saarland,66.0
-Berlin,65.0
-Sachsen,64.0
-Thuringia,63.0
-Mecklenburg-Vorpommern,62.0
-Saxony-Anhalt,61.0
-Brandenburg,60.0
-Bremen,55.0
+Bundesland,Prozente
+Baden-Württemberg,77.8
+Bayern,79.9
+Berlin,69.5
+Brandenburg,75.6
+Bremen,71.9
+Hamburg,77.8
+Hessen,76.2
+Mecklenburg-Vorpommern,71.1
+Niedersachsen,74.7
+Nordrhein-Westfalen,76.4
+Rheinland-Pfalz,77.2
+Saarland,77.3
+Sachsen,76.5
+Sachsen-Anhalt,67.9
+Schleswig-Holstein,78.2
+Thüringen,74.9
+
