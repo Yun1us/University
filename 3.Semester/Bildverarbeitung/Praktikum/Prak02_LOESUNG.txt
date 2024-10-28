@@ -1,0 +1,28 @@
+Q: How does finding corresponding points between two  Images pairs contribute to the 3D depth inteference? 
+
+A: finding corresponding points allows us to compute disparities, and these disparities are directly used to infer 3D depth through triangulation. This principle is foundational in stereo vision, structure from motion, and 3D reconstruction techniques.
+
+
+Q: Differentiate between sparse correspondance and dense correspondance in mage matching
+
+A: Sparse correspondence identifies a limited set of distinct, easily detectable points (like corners or edges) across images, focusing on key features for matching. Dense correspondence, on the other hand, attempts to match every pixel or region between images, resulting in a full field of correspondences that provides detailed depth and motion information across the entire image.
+
+
+Q: Describe the characteristics of an Image patch that make it "easy-to-match" using the Concept of the Sum of squared differences (SSD) error
+
+A: An "easy-to-match" patch has distinctive textures (like corners) that cause large changes in pixel values with small shifts, leading to a high SSD error when misaligned.
+
+
+Q: In the mathematical formulation of cornerness, what does the Expression E(u,v) represent, and what role do u and v Play? 
+
+A: In the cornerness formulation, E(u,v) represents the Sum of Squared Differences (SSD) error when a patch is shifted by (u,v). Here, u, v denote the shift in the x and y directions, respectively; they measure how much the SSD error changes with small shifts, indicating the distictiveness of the patch
+
+
+
+
+
+
+
+
+
+
