@@ -7,3 +7,4 @@ select mname, wohnort from Mitarbeiter where anstellungsdatum > "1998-04-28" ord
 select mname, wohnort, bname, blz from Mitarbeiter, bank where arbeitgeber_bank = bname and monatsgehalt < 2500;
 select mname, wohnort, bname, blz from Mitarbeiter join bank on arbeitgeber_bank = bname where monatsgehalt < 2500;
 select kontoart, kontonummer from konto, unterhaelt, kunde where kontonummer = kontonr and inhaber = kname and betreuer = "Olafson";
+select kname, kontonr, guthaben from konto, unterhaelt, kunde, mitarbeiter, bank where kontoart = 'Tagesgeld' and kontonr = kontonummer and inhaber = kname and betreuer = mname and arbeitgeber_bank = bname and geschaeftssitz = 'Frankfurt';
