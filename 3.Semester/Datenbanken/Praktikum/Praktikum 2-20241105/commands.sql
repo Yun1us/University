@@ -22,8 +22,6 @@ select mname, monatsgehalt from mitarbeiter where monatsgehalt > (select avg(mon
 
 select mname, arbeitgeber_bank from mitarbeiter where exists (select betreuer from kunde where wohnort = 'Leipzig' and mname=betreuer);
 
-select k.kontonr, k.guthaben 
-from konto k
-join Filiale on anlage_filiale = fname where mutterbank = 'BlackBank' and kontoart = 'Giro' order by kontonr desc;
+select k.kontonr, k.guthaben from konto k join Filiale on anlage_filiale = fname where mutterbank = 'BlackBank' and kontoart = 'Giro' order by kontonr desc;
 
 select kontonr, guthaben from konto where kontoart = 'Giro' and anlage_filiale in (select fname from filiale where mutterbank = 'BlackBank') order by kontonr desc;
