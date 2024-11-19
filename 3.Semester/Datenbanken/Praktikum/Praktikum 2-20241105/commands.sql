@@ -14,7 +14,7 @@ SELECT kontonr, kontoart from konto JOIN unterhaelt ON kontonr = kontonummer JOI
 
 select kname, kontonr, guthaben from konto, unterhaelt, kunde, mitarbeiter, bank where kontoart = 'Tagesgeld' and kontonr = kontonummer and inhaber = kname and betreuer = mname and arbeitgeber_bank = bname and geschaeftssitz = 'Frankfurt';
 
-select kontonr, guthaben, kname from konto join unterhaelt on kontonummer = kontonr join kunde on kname = inhaber and inhaber_gebdat = geburtsdatum join filiale on fname = zustaendige_filiale join bank on mutterbank = bname where geschaeftssitz = 'Frankfurt' order by inhaber, kontonr;
+select kontonr, guthaben, kname from konto join unterhaelt on kontonummer = kontonr join kunde on kname = inhaber and inhaber_gebdat = geburtsdatum join filiale on fname = zustaendige_filiale join bank on mutterbank = bname where geschaeftssitz = 'Frankfurt' and kontoart = 'Tagesgeld' order by inhaber, kontonr;
 
 select count(*) from mitarbeiter where wohnort = 'Hamburg'
 
