@@ -28,22 +28,26 @@ select lname from lieferant where jahreink > ( select jahreink from lieferant wh
 5. 
 (1)
 select lname from lieferant l where l.stadt > 'Landshut' collate nocase order by l.lname asc;
+collate nocase ignoriert die Groß und Kleinschreibung 
 
 (2)
 select lname from lieferant l where l.stadt > ( select p.stadt from projekt p order by p.stadt desc limit 1) order by lname asc;
+limit gibt nur die anzahl der Zeilen die angegeben ist zurück
 
 6. 
 select pname from projekt where budget < ( select jahreink from lieferant order by jahreink desc limit 1) order by pname asc;
 
+
 7.
 (1)
-select t.tname from teil t where t.stadt not in( select l.stadt from lieferant l union select p.stadt from projekt p);
+select t.tname from teil t where t.stadt not in ( select l.stadt from lieferant l union select p.stadt from projekt p);
+funktioniert ? 
 
 (2)
-select t.tname from teil t where t.stadt not in( select l.stadt from lieferant l inner join lpt on ln = lnummer inner join projekt on pn = pnummer);
+select t.tname from teil t where t.stadt not in( select l.stadt from lieferant l join lpt on ln = lnummer join projekt on pn = pnummer);
 
 (3)
-select t.tname from teil t where t.stadt not in( select t.stadt from teil t where t.stadt in( select l.stadt from lieferant l inner join lpt on ln = lnummer inner join projekt on pn = pnummer));
+select t.tname from teil t where t.stadt not in( select t.stadt from teil t where t.stadt in ( select l.stadt from lieferant l join lpt on ln = lnummer join projekt on pn = pnummer));
 
 8. 
 select tnummer, gewicht, farbe, lpt.menge from teil join lpt on tnummer = tn where (farbe = 'red' or farbe = 'green') and menge > 2000;
@@ -55,7 +59,7 @@ create table nine as select ln, tn, pn from lpt where pn = 3;
 update teil set stadt = (select l.stadt from lieferant l where lname = 'Jones') where farbe = 'red';
 
 11. 
-sqlite> delete from lpt where ln = (select lnummer from lieferant where stadt = 'Landshut');
+delete from lpt where ln = (select lnummer from lieferant where stadt = 'Landshut');
 
 12. 
 drop table lieferant;
