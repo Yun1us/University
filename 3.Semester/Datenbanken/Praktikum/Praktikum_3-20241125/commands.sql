@@ -1,65 +1,60 @@
-sqlite3 
-.open Datenbankenprak03
-.read creates.sql 
-.read inserts.sql
+--AUFGABEN: 
+--1.
+SELECT DISTINCT tnummer FROM teil JOIN lpt ON teil.tnummer = lpt.tn JOIN lieferant ON lpt.ln = lieferant.lnummer WHERE lieferant.stadt = 'Landshut' ORDER BY teil.tnummer;
 
-AUFGABEN: 
-1.
-select tnummer from teil, lieferant where tnummer = lnummer and Lieferant.stadt = 'Landshut';
+--join1:
+SELECT DISTINCT tnummer FROM teil t JOIN lpt l ON t.tnummer = l.tn JOIN lieferant lf ON l.ln = lf.lnummer WHERE lf.stadt = 'Landshut' ORDER BY t.tnummer;
 
-join1:
-select tnummer from teil join lpt on tnummer = tn join lieferant on ln = lnummer where lieferant.stadt = 'Landshut';
+--join2:
+SELECT DISTINCT teil.tnummer FROM teil INNER JOIN lpt ON teil.tnummer = lpt.tn INNER JOIN lieferant ON lpt.ln = lieferant.lnummer WHERE lieferant.stadt = 'Landshut' ORDER BY teil.tnummer;
 
-join2:
-select tnummer from teil join lpt on tnummer = tn join lieferant on ln = lnummer join projekt on pn = pnummer where lieferant.stadt = 'Landshut';
-
-geschachteltes select:
+--geschachteltes select:
 select tn from lpt where ln in ( select lnummer from lieferant where stadt = 'Landshut');
 
-2.
-select tname from Teil join lpt on tnummer = tn where menge > 1000;
+--2.
+select tname
+from teil
+join lpt on tn = tnummer
+where menge > 1000;
 
-3.
+--3.
 SELECT l.stadt FROM lieferant l UNION SELECT p.stadt FROM projekt p;
 
-4. 
+--4. 
 select lname from lieferant where jahreink > ( select jahreink from lieferant where lname = 'Zymi') order by lname desc;
 
-5. 
-(1)
+--5. 
+--(1)
 select lname from lieferant l where l.stadt > 'Landshut' collate nocase order by l.lname asc;
-collate nocase ignoriert die Groß und Kleinschreibung 
 
-(2)
-select lname from lieferant l where l.stadt > ( select p.stadt from projekt p order by p.stadt desc limit 1) order by lname asc;
-limit gibt nur die anzahl der Zeilen die angegeben ist zurück
+--(2)
+select lname from lieferant where not exists( select 1 from projekt where lieferant.stadt < projekt.stadt) order by lname;
 
-6. 
+--6. 
 select pname from projekt where budget < ( select jahreink from lieferant order by jahreink desc limit 1) order by pname asc;
 
+--7.
+--(1)
+select t.tname
+from teil t
+where t.stadt not in(
+select l.stadt from lieferant l
+union
+select p.stadt from projekt p);
 
-7.
-(1)
-select t.tname from teil t where t.stadt not in ( select l.stadt from lieferant l union select p.stadt from projekt p);
-funktioniert ? 
+--(2)
+select distinct tname from teil where teil.stadt != (select stadt from lieferant union select stadt from projekt);
 
-(2)
-select t.tname from teil t where t.stadt not in( select l.stadt from lieferant l join lpt on ln = lnummer join projekt on pn = pnummer);
+--8. 
+select tnummer, gewicht, farbe, max(menge) from teil join lpt on lpt.tn = teil.tnummer where teil.farbe in ("red","green") group by tnummer, gewicht, farbe having sum(lpt.menge)>2000 order by tnummer;
+--9.
+--create table nine as select ln, tn, pn from lpt where pn = 3;
 
-(3)
-select t.tname from teil t where t.stadt not in( select t.stadt from teil t where t.stadt in ( select l.stadt from lieferant l join lpt on ln = lnummer join projekt on pn = pnummer));
+--10.
+--update teil set stadt = (select l.stadt from lieferant l where lname = 'Jones') where farbe = 'red';
 
-8. 
-select tnummer, gewicht, farbe, lpt.menge from teil join lpt on tnummer = tn where (farbe = 'red' or farbe = 'green') and menge > 2000;
+--11. 
+--delete from lpt where ln = (select lnummer from lieferant where stadt = 'Landshut');
 
-9.
-create table nine as select ln, tn, pn from lpt where pn = 3;
-
-10.
-update teil set stadt = (select l.stadt from lieferant l where lname = 'Jones') where farbe = 'red';
-
-11. 
-delete from lpt where ln = (select lnummer from lieferant where stadt = 'Landshut');
-
-12. 
-drop table lieferant;
+--12. 
+--drop table lieferant;
