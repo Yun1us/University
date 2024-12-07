@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import numpy as np
-
+from math import floor
 
 def create_Gaussian_kernel(cutoff_frequency):
   """
@@ -26,14 +26,23 @@ def create_Gaussian_kernel(cutoff_frequency):
     corrdinate.
   """
 
-  ############################
-  ### TODO: YOUR CODE HERE ###
+  standart_deviaton = cutoff_frequency
 
-  raise NotImplementedError('`create_Gaussian_kernel` function in '
-    + '`student_code.py` needs to be implemented')
+  k = cutoff_frequency * 4 + 1 
+  
+  mean = floor(k / 2)
 
-  ### END OF STUDENT CODE ####
-  ############################
+  # Create 1D Gaussian kernel
+  kernel_1d = np.fromfunction(
+      lambda x: (1 / (np.sqrt(2 * np.pi) * standart_deviaton)) * np.exp(- (x - mean)**2 / (2 * standart_deviaton**2)),
+      (k,)
+  )
+
+  # Create 2D Gaussian kernel as the outer product of two 1D Gaussian kernels
+  kernel_2d = np.outer(kernel_1d, kernel_1d)
+
+  # Normalize the kernel so that the sum of all elements is 1
+  kernel = kernel_2d / np.sum(kernel_2d)
 
   return kernel
 
@@ -60,14 +69,16 @@ def my_imfilter(image, filter):
   assert filter.shape[0] % 2 == 1
   assert filter.shape[1] % 2 == 1
 
-  ############################
-  ### TODO: YOUR CODE HERE ###
+  filtered_image = np.zeros_like(image)
+  pad_height = filter.shape[0] // 2
+  pad_width = filter.shape[1] // 2
 
-  raise NotImplementedError('`my_imfilter` function in `student_code.py` ' +
-    'needs to be implemented')
+  padded_image = np.pad(image, ((pad_height, pad_height), (pad_width, pad_width), (0, 0)), mode='constant')
 
-  ### END OF STUDENT CODE ####
-  ############################
+  for c in range(image.shape[2]):
+    for i in range(image.shape[0]):
+      for j in range(image.shape[1]):
+        filtered_image[i, j, c] = np.sum(padded_image[i:i+filter.shape[0], j:j+filter.shape[1], c] * filter)
 
   return filtered_image
 
@@ -104,13 +115,8 @@ def create_hybrid_image(image1, image2, filter):
   assert filter.shape[0] % 2 == 1
   assert filter.shape[1] % 2 == 1
 
-  ############################
-  ### TODO: YOUR CODE HERE ###
-
-  raise NotImplementedError('`create_hybrid_image` function in ' +
-    '`student_code.py` needs to be implemented')
-
-  ### END OF STUDENT CODE ####
-  ############################
+  low_frequencies = my_imfilter(image1, filter)
+  high_frequencies = image2 - my_imfilter(image2, filter)
+  hybrid_image = np.clip(low_frequencies + high_frequencies, 0, 1)
 
   return low_frequencies, high_frequencies, hybrid_image
